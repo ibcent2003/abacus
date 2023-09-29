@@ -1,0 +1,72 @@
+﻿
+@using IdentityServer4.Extensions
+@using Microsoft.AspNetCore.Authentication.Cookies
+@using Newtonsoft.Json
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.Application.Common.Interfaces
+@using Wbc.WebUI.Services
+@inject CommonLocalizationService Localizer
+@inject ICurrentUserService UserService
+
+
+
+<header class="header_wrap fixed-top dark_skin main_menu_uppercase overlay_bg_white_90 ">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+                <img class="logo_dark" src="~/assets/images/weblogo.png" alt="logo" width="200" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
+                <span class="ion-android-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class=""><a class=" nav-link active" href="/">@Localizer.Get("Home")</a></li>
+                    <li class=""><a class="nav-link" asp-page="/About">@Localizer.Get("About")</a></li>
+                    @if (User.IsAuthenticated())
+                    {
+                        <li class=""><a class="nav-link" asp-page="/Pricing">@Localizer.Get("Subscription")</a></li>
+                    }
+                    else
+                    {
+                        <li class=""><a class="nav-link" asp-page="/Pricing">@Localizer.Get("Pricing")</a></li>
+                    }
+                    <li class=""><a class="nav-link" asp-page="/Documentation">@Localizer.Get("Documentation")</a></li>
+
+
+                    @if (User.IsAuthenticated())
+                    {
+                        var userId = User.FindFirst(x => x.Type == System.Security.Claims.ClaimTypes.NameIdentifier).Value;
+                        {
+                            var firstname = User.FindFirst(x => x.Type == ClaimTypes.FirstName.GetAttributeStringValue()).Value;
+                            var surname = User.FindFirst(x => x.Type == ClaimTypes.LastName.GetAttributeStringValue()).Value;
+
+
+                            <li class="dropdown ml-sm-2">
+                                <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown" data-toggle="dropdown">
+                                    <i class="align-middle"><b>@firstname</b> @surname</i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown" style="background-color:none">
+                                    <a class="dropdown-item" href="/dashboard"><i class="align-middle mr-1 fas fa-fw fa-book"></i> @Localizer.Get("MyProfile")</a>
+                                    <a class="dropdown-item" href="#"><i class="align-middle mr-1 fas fa-fw fa-cogs"></i> @Localizer.Get("ChangePassword")</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/Account/Signout"><i class="align-middle mr-1 fas fa-fw fa-arrow-alt-circle-right"></i> @Localizer.Get("Logout")</a>
+                                </div>
+                            </li>
+
+                        }
+                    }
+
+                </ul>
+                @if (!User.IsAuthenticated())
+                {                  
+                    <div class="header_btn d-sm-block d-none">
+                        <a asp-page="register" asp-area="Registration" class="btn btn-fill-out btn-radius border-2 ml-2 btn-sm">@Localizer.Get("Register")</a>
+                        <a asp-page="Signin" asp-area="Account" class="btn btn-fill-out btn-radius border-2 ml-2 btn-sm">@Localizer.Get("Login")</a>
+                    </div>
+                }
+            </div>
+        </nav>
+    </div>
+</header>

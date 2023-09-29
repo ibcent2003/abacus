@@ -1,0 +1,234 @@
+2020-09-11T00:37:56.2792132+00:00 0HM2LTBM0GFC4:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (537 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T10:18:01.4526581+00:00 0HM2M7FPOVAFJ:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2044 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T10:18:11.2126763+00:00 0HM2M7FPOVAFJ:00000063 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (609 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T10:26:03.3163338+00:00 0HM2M7FPOVAFL:00000011 [WRN] Wbc.Cube Long Running Request: "GetMenuResourceQuery" (832 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" GetMenuResourceQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T10:45:41.6846783+00:00 0HM2M7V8I9OVV:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2372 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T10:49:06.6420794+00:00 0HM2M8161IOAN:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1172 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T11:00:14.8457207+00:00 0HM2M87D8JOQT:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1272 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T11:00:44.8153022+00:00 0HM2M87D8JOQT:0000003F [WRN] Wbc.Cube Long Running Request: "GetPendingDutyListQuery" (525 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" GetPendingDutyListQuery { draw: 1, start: 0, length: 10, search: "", sortColumn: 1, sortDirection: "asc" } (6c601218)
+2020-09-11T11:00:56.6791674+00:00 0HM2M87D8JOQT:00000043 [WRN] Wbc.Cube Long Running Request: "GetMenuResourceQuery" (616 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" GetMenuResourceQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T11:07:41.0366340+00:00 0HM2M87D8JOQU:0000000F [WRN] Wbc.Cube Long Running Request: "AddCountryCommand" (1544 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" AddCountryCommand { Id: 0, CountryName: "Uinted State Of America", CountryCode: "USA", CurrencyName: "US Dollar", CurrencyCode: "USD" } (6c601218)
+2020-09-11T11:12:43.3622347+00:00 0HM2M8EBQFCQ0:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2558 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T11:12:58.7064207+00:00 0HM2M8EBQFCQ0:0000003B [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (539 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T11:14:43.3456691+00:00 0HM2M8EBQFCQ0:00000043 [WRN] Wbc.Cube Long Running Request: "CreateGeneralGoodsSearchCommand" (2544 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" CreateGeneralGoodsSearchCommand { HsCode: "5401201000", FOB: 3000, Freight: 600, Insurance: 700, CurrencyId: 111, CountryId: 2, ExportingCountryId: 3, Keyword: "Totoya Camry", ContainerSize: "20feet" } (6c601218)
+2020-09-11T11:32:58.4248008+00:00 0HM2M8PM1NQ6K:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2057 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T11:48:05.0849541+00:00 0HM2M924DTU79:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1544 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T11:51:28.6504049+00:00 0HM2M9412ETHQ:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1585 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T11:55:33.7744369+00:00 0HM2M969TA738:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1397 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T11:58:13.1784766+00:00 0HM2M969TA738:00000055 [WRN] Wbc.Cube Long Running Request: "CreateGeneralGoodsSearchCommand" (2973 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" CreateGeneralGoodsSearchCommand { HsCode: "8708.99.00.00", FOB: 15000, Freight: 200, Insurance: 500, CurrencyId: 111, CountryId: 1, ExportingCountryId: 3, Keyword: "Totoya Camry", ContainerSize: "20feet" } (6c601218)
+2020-09-11T14:59:57.4902808+00:00 0HM2MCDC50U41:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (522 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:14:39.8964332+00:00 0HM2MCLIU1LBB:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (729 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:45:13.2103245+00:00 0HM2MCLIU1LBC:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1451 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:45:13.7659083+00:00 0HM2MCLIU1LBC:0000000F [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The layout view 'Shared/_LayoutLatest' could not be located. The following locations were searched:
+/Areas/GeneralGoods/Pages/Shared/_LayoutLatest.en-GB.cshtml
+/Areas/GeneralGoods/Pages/Shared/_LayoutLatest.en.cshtml
+/Areas/GeneralGoods/Pages/Shared/_LayoutLatest.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_LayoutLatest.en.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_LayoutLatest.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_LayoutLatest.en.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_LayoutLatest.cshtml
+/Pages/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Pages/Shared/Shared/_LayoutLatest.en.cshtml
+/Pages/Shared/Shared/_LayoutLatest.cshtml
+/Views/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Views/Shared/Shared/_LayoutLatest.en.cshtml
+/Views/Shared/Shared/_LayoutLatest.cshtml
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-11T15:46:19.3845110+00:00 0HM2MCLIU1LBC:00000011 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Pages/Shared/_LayoutLatest.cshtml': 'scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-11T15:59:23.0627885+00:00 0HM2MCLIU1LBD:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1766 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:24.4227354+00:00 0HM2MCLIU1LBD:00000027 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (860 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:24.4718919+00:00 0HM2MCLIU1LBD:00000015 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (925 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:25.0548283+00:00 0HM2MCLIU1LBD:00000023 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1505 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:25.0634682+00:00 0HM2MCLIU1LBD:00000029 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1488 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:25.1106993+00:00 0HM2MCLIU1LBD:0000001F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1564 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:25.6414640+00:00 0HM2MCLIU1LBD:0000001B [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2092 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:25.6505549+00:00 0HM2MCLIU1LBD:00000013 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2104 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:25.6529318+00:00 0HM2MCLIU1LBD:0000001D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2106 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:25.7015363+00:00 0HM2MCLIU1LBD:00000017 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2153 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.2533749+00:00 0HM2MCLIU1LBD:0000002F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2632 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.2533749+00:00 0HM2MCLIU1LBD:00000019 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2706 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.2718142+00:00 0HM2MCLIU1LBD:0000002D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2650 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.2785839+00:00 0HM2MCLIU1LBD:0000002B [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2657 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.2785829+00:00 0HM2MCLIU1LBD:00000011 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2732 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.8693388+00:00 0HM2MCLIU1LBD:00000039 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2949 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.8693419+00:00 0HM2MCLIU1LBD:0000003D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2910 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.8734343+00:00 0HM2MCLIU1LBD:0000003B [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2961 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.8832123+00:00 0HM2MCLIU1LBD:00000033 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (3105 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.8836727+00:00 0HM2MCLIU1LBD:00000037 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2976 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:26.9017890+00:00 0HM2MCLIU1LBD:00000031 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (3235 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:27.4813562+00:00 0HM2MCLIU1LBD:00000041 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (3433 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:27.4848822+00:00 0HM2MCLIU1LBD:00000043 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (3388 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:27.4856940+00:00 0HM2MCLIU1LBD:00000047 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (3381 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T15:59:27.5216463+00:00 0HM2MCLIU1LBD:0000003F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (3525 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T16:01:08.2167660+00:00 0HM2MCLIU1LBD:0000006D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The layout view 'Shared/_LayoutLatest' could not be located. The following locations were searched:
+/Areas/GeneralGoods/Pages/Shared/_LayoutLatest.en-GB.cshtml
+/Areas/GeneralGoods/Pages/Shared/_LayoutLatest.en.cshtml
+/Areas/GeneralGoods/Pages/Shared/_LayoutLatest.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_LayoutLatest.en.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_LayoutLatest.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_LayoutLatest.en.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_LayoutLatest.cshtml
+/Pages/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Pages/Shared/Shared/_LayoutLatest.en.cshtml
+/Pages/Shared/Shared/_LayoutLatest.cshtml
+/Views/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Views/Shared/Shared/_LayoutLatest.en.cshtml
+/Views/Shared/Shared/_LayoutLatest.cshtml
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-11T16:03:48.8014073+00:00 0HM2MCLIU1LBD:0000006F [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The layout view 'Shared/_LayoutLatest' could not be located. The following locations were searched:
+/Areas/GeneralGoods/Pages/Shared/_LayoutLatest.en-GB.cshtml
+/Areas/GeneralGoods/Pages/Shared/_LayoutLatest.en.cshtml
+/Areas/GeneralGoods/Pages/Shared/_LayoutLatest.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_LayoutLatest.en.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_LayoutLatest.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_LayoutLatest.en.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_LayoutLatest.cshtml
+/Pages/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Pages/Shared/Shared/_LayoutLatest.en.cshtml
+/Pages/Shared/Shared/_LayoutLatest.cshtml
+/Views/Shared/Shared/_LayoutLatest.en-GB.cshtml
+/Views/Shared/Shared/_LayoutLatest.en.cshtml
+/Views/Shared/Shared/_LayoutLatest.cshtml
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-11T16:09:18.9941860+00:00 0HM2MCLIU1LBD:000000F1 [WRN] Wbc.Cube Long Running Request: "GetMenuResourceQuery" (617 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" GetMenuResourceQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T16:09:21.0549806+00:00 0HM2MCLIU1LBD:000000FD [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1514 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T16:09:21.1577642+00:00 0HM2MCLIU1LBD:000000FB [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1771 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T16:09:22.1653428+00:00 0HM2MCLIU1LBD:00000105 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1694 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T20:25:25.3172830+00:00 0HM2MHV5URP1H:00000025 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (699 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T20:25:25.3363118+00:00 0HM2MHV5URP1H:0000002B [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (730 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T20:25:25.8342196+00:00 0HM2MHV5URP1H:0000002F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (776 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-11T21:44:40.6087977+00:00 0HM2MJC5DSH02:000000AB [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The layout view 'Shared/_PlainLayout' could not be located. The following locations were searched:
+/Areas/GeneralGoods/Pages/Shared/_PlainLayout.en-GB.cshtml
+/Areas/GeneralGoods/Pages/Shared/_PlainLayout.en.cshtml
+/Areas/GeneralGoods/Pages/Shared/_PlainLayout.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_PlainLayout.en-GB.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_PlainLayout.en.cshtml
+/Areas/GeneralGoods/Pages/Shared/Shared/_PlainLayout.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_PlainLayout.en-GB.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_PlainLayout.en.cshtml
+/Areas/GeneralGoods/Views/Shared/Shared/_PlainLayout.cshtml
+/Pages/Shared/Shared/_PlainLayout.en-GB.cshtml
+/Pages/Shared/Shared/_PlainLayout.en.cshtml
+/Pages/Shared/Shared/_PlainLayout.cshtml
+/Views/Shared/Shared/_PlainLayout.en-GB.cshtml
+/Views/Shared/Shared/_PlainLayout.en.cshtml
+/Views/Shared/Shared/_PlainLayout.cshtml
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-11T22:05:58.6607343+00:00 0HM2MJR9D253Q:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (515 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)

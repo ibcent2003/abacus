@@ -1,0 +1,62 @@
+﻿@page "{Id}"
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MenuResource.Pages.DeleteTopResourceModel
+@inject IStringLocalizer<Pages.DeleteTopResourceModel> Localizer
+
+@inject CommonLocalizationService LocalizationService
+@{
+}
+
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListTopResource",new {area="MenuResource"})">@LocalizationService.Get("ListTopResourcesRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("DeleteTopResourceRes")</li>
+        </ol>
+    </nav>
+}
+
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title"><p class="text-danger">@Localizer["DeleteConfirmationMessage"]</p></h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="UpdateTopResource" method="post">
+            <div class="col-md-6">
+                <input asp-for="DeleteCommand.Id" type="hidden" />
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="DeleteCommand.ResourceName"> @Localizer["RsourceNamelbl"] :</label>
+                    <input readonly="readonly" class="form-control form-control-lg" asp-for="DeleteCommand.ResourceName"  />
+
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="DeleteCommand.LocalizationKey"> @Localizer["LocalizationKeylbl"] :</label>
+                    <input readonly="readonly" asp-for="DeleteCommand.LocalizationKey"  class="form-control-lg form-control" />
+
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="DeleteCommand.Order"> @Localizer["Orderlbl"] :</label>
+                    <input asp-for="DeleteCommand.Order" readonly="readonly" class="form-control-lg form-control" min="1" />
+                    
+                </div>
+                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Delete" />
+            </div>
+        </form>
+    </div>
+</div>
+

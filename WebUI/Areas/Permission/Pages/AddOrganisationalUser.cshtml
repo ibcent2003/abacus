@@ -1,0 +1,90 @@
+﻿@page
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.Permission.Pages.AddOrganisationalUserModel
+@inject IStringLocalizer<AddOrganisationalUserModel> Localizer
+@inject CommonLocalizationService LocalizationService
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+@section Css{
+
+    <link href="~/lib/PhoneNum/build/css/intlTelInput.css" rel="stylesheet" />
+}
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("OrganisationalUsers",new {area="Permission"})">@LocalizationService.Get("ListUsersRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("AddOrganisationalUserRes")</li>
+        </ol>
+    </nav>
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["FormHeader"]</h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="AddOrganisationalUser" method="post">
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-form-label required" asp-for="Command.FirstName"> @Localizer["FirstNamelbl"] :</label>
+                    <input required asp-for="Command.FirstName" class="form-control form-control-lg" />
+                    <span class="text-danger" id="Command_FirstNameError" asp-validation-for="Command.FirstName"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.MiddleName"> @Localizer["MiddleNamelbl"] :</label>
+                    <input asp-for="Command.MiddleName" class="form-control form-control-lg" />
+                    <span class="text-danger" id="Command_MiddleNameError" asp-validation-for="Command.MiddleName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label required" asp-for="Command.LastName"> @Localizer["LastNamelbl"] :</label>
+                    <input required asp-for="Command.LastName" class="form-control form-control-lg" />
+                    <span class="text-danger" id="Command_LastNameError" asp-validation-for="Command.LastName"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label required" asp-for="Command.EmailAddress"> @Localizer["AdminEmailAddresslbl"] :</label>
+                    <input type="email" required asp-for="Command.EmailAddress" class="form-control form-control-lg" />
+                    <small class="form-text text-muted">This email address will be use to as the username to the account.</small>
+                    <span class="text-danger" id="Command_AdminEmailAddressError" asp-validation-for="Command.EmailAddress"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label required" asp-for="Command.PhoneNumber"> @Localizer["AdminPhoneNumberlbl"] :</label>
+                    <input type="tel" required asp-for="Command.PhoneNumber" class="form-control form-control-lg" />
+                    <small class="form-text text-muted">e.g +2330245657789</small>
+                    <span class="text-danger" id="Command_AdminPhoneNumberError" asp-validation-for="Command.PhoneNumber"></span>
+                </div>
+                <div class="form-group">
+                    <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Create" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+
+    <script src="~/lib/PhoneNum/build/js/intlTelInput.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+    
+    <script>
+        $(document).ready(function () {
+
+            var input = document.querySelector("#Command_PhoneNumber");
+            window.intlTelInput(input, { autoHideDialCode: true, formatOnDisplay: true, nationalMode: false });
+
+        })
+    </script>
+}

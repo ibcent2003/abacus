@@ -1,0 +1,107 @@
+2020-10-02T00:20:47.3990001+00:00 0HM36D3KM1F2V:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2155 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-10-02T00:21:27.7067041+00:00 0HM36D3KM1F2V:0000005B [WRN] Wbc.Cube Long Running Request: "GetUserHScodePoolQuery" (559 milliseconds) "b6c506ed-3286-463c-b943-720b27552adb" "(null)" GetUserHScodePoolQuery { TransactionId: 95fa64ce-55a4-4a6c-99f6-e9ab607a7ecf } (6c601218)
+2020-10-02T00:34:47.6822611+00:00 0HM36DBJC1S2B:00000043 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (3500 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-10-02T00:35:08.8626923+00:00 0HM36DBJC1S2B:0000004F [WRN] Wbc.Cube Long Running Request: "GetUserHScodePoolQuery" (601 milliseconds) "b6c506ed-3286-463c-b943-720b27552adb" "(null)" GetUserHScodePoolQuery { TransactionId: 95fa64ce-55a4-4a6c-99f6-e9ab607a7ecf } (6c601218)
+2020-10-02T11:29:30.6709309+00:00 0HM36OPJI33M3:00000049 [ERR] Message contains error: '"invalid_client"', error_description: '"error_description is null"', error_uri: '"error_uri is null"', status code '400'. (23599a6f)
+2020-10-02T11:29:30.7193230+00:00 0HM36OPJI33M3:00000049 [ERR] Exception occurred while processing message. (d37e9c4d)
+Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+2020-10-02T11:29:30.7252561+00:00 0HM36OPJI33M3:00000049 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-02T11:31:27.4210334+00:00 0HM36OPJI33M3:0000004F [ERR] Message contains error: '"invalid_client"', error_description: '"error_description is null"', error_uri: '"error_uri is null"', status code '400'. (23599a6f)
+2020-10-02T11:31:27.4219378+00:00 0HM36OPJI33M3:0000004F [ERR] Exception occurred while processing message. (d37e9c4d)
+Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+2020-10-02T11:31:27.4233438+00:00 0HM36OPJI33M3:0000004F [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-02T11:31:37.7978317+00:00 0HM36OPJI33M3:00000055 [ERR] Message contains error: '"invalid_client"', error_description: '"error_description is null"', error_uri: '"error_uri is null"', status code '400'. (23599a6f)
+2020-10-02T11:31:37.7989975+00:00 0HM36OPJI33M3:00000055 [ERR] Exception occurred while processing message. (d37e9c4d)
+Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+2020-10-02T11:31:37.8011443+00:00 0HM36OPJI33M3:00000055 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-02T11:32:07.9376300+00:00 0HM36OPJI33M3:00000057 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: OpenIdConnectAuthenticationHandler: message.State is null or empty.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-02T11:32:23.1989430+00:00 0HM36OPJI33M3:0000005D [ERR] Message contains error: '"invalid_client"', error_description: '"error_description is null"', error_uri: '"error_uri is null"', status code '400'. (23599a6f)
+2020-10-02T11:32:23.1997112+00:00 0HM36OPJI33M3:0000005D [ERR] Exception occurred while processing message. (d37e9c4d)
+Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+2020-10-02T11:32:23.2010813+00:00 0HM36OPJI33M3:0000005D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-02T11:44:50.8349320+00:00 0HM36P1FORF4C:00000059 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Wbc.WebUI.Areas.GeneralGoods.Pages.GeneralGoodDutyResultModel.OnGet(Guid transactionId) in C:\Users\ibrahim\source\repos\Abacus\WebUI\Areas\GeneralGoods\Pages\GeneralGoodDutyResult.cshtml.cs:line 55
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-02T11:47:06.0870740+00:00 0HM36P3BEQ04A:00000011 [ERR] Message contains error: '"invalid_client"', error_description: '"error_description is null"', error_uri: '"error_uri is null"', status code '400'. (23599a6f)
+2020-10-02T11:47:06.1376804+00:00 0HM36P3BEQ04A:00000011 [ERR] Exception occurred while processing message. (d37e9c4d)
+Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+2020-10-02T11:47:06.1440239+00:00 0HM36P3BEQ04A:00000011 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: An error was encountered while handling the remote login.
+ ---> Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException: Message contains error: 'invalid_client', error_description: 'error_description is null', error_uri: 'error_uri is null'.
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.RedeemAuthorizationCodeAsync(OpenIdConnectMessage tokenEndpointRequest)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleRemoteAuthenticateAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

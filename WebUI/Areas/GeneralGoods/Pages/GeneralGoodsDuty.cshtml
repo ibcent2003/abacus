@@ -1,0 +1,220 @@
+﻿@page "{abacus_import?}/{abacus_product?}/{abacus_cost?}"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.Extensions.Localization
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.GeneralGoods.Pages.GeneralGoodsDutyModel
+@inject IStringLocalizer<GeneralGoodsDutyModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+
+    Layout = "_LayoutLatest";
+
+}
+
+@*@section PageName
+    {
+        @Localizer["PageName"]
+
+
+    }*@
+<style type="text/css">
+    body {
+        font-family: Arial;
+        font-size: 10pt;
+    }
+</style>
+<link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />
+
+
+@*@section ActivePage
+    {
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+                <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("GeneralGoodsDutyRes")</li>
+            </ol>
+        </nav>
+    }*@
+
+
+<div class="breadcrumb_section page_small page_title_light background_bg " data-img-src="/assets/images/banner.png" style="background-image: url(&quot;/assets/images/banner.png&quot;);">
+    <div class="container">
+        <!-- STRART CONTAINER -->
+
+        <div class="row align-items-center">
+            <div class="col-lg-5 offset-lg-1 col-md-5">
+
+            </div>
+            <div class="col-lg-6 col-md-7 order-md-first">
+                <div class="page-title">
+                    <h1>Commodity Duty<br />Calculator</h1>
+                </div>
+                <span><strong style="color:#292b2c;">Get estimated duty for goods</strong></span>
+                <span><br /></span>
+                <span style="color:#292b2c;">Discover detailed information about Custom Duty, Tax and Levies</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- END CONTAINER-->
+</div>
+
+@Html.AntiForgeryToken()
+
+
+<!-- START SECTION SEARCH -->
+<div class="section bg_linen pb_20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading_s1">
+                    <h2>@Localizer["GeneralGoodsFormHeader"]</h2>
+                </div>
+            </div>
+        </div>
+        <form asp-page="GeneralGoodsDuty" method="post">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="field_form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label>@Localizer["ExportCountrylbl"]</label>
+                                <select class="custom-select form-control first_null not_chosen" id="validationCustom04" asp-for="Command.ExportingCountryId" asp-items="Model.ExportingCountryList">
+                                    <option selected="" value="">@LocalizationService.Get("SelectListDefault")</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>@Localizer["Countrylbl"]</label>
+                                @if (Model.Abacus_import == null)
+                                {
+                                    <select class="custom-select form-control first_null not_chosen" asp-for="Command.CountryId" asp-items="Model.CountryList">
+                                        <option value="">@LocalizationService.Get("SelectListDefault")</option>
+                                    </select>
+                                }
+                                else
+                                {
+                                    <select class="custom-select form-control first_null not_chosen" asp-for="Command.CountryId" asp-items="Model.CountryList">
+                                        @*<option value="">@LocalizationService.Get("SelectListDefault")</option>*@
+                                    </select>
+                                }
+
+                                <span class="text-danger" asp-validation-for="Command.CountryId"></span>
+
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>@Localizer["Currencylbl"]</label>
+                                <select class="custom-select form-control first_null not_chosen" asp-for="Command.CurrencyId" asp-items="Model.Currencylist">
+                                    <option value="">@LocalizationService.Get("SelectListDefault")</option>
+                                </select>
+                                <span class="text-danger" asp-validation-for="Command.CurrencyId"></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- START SECTION QUERY -->
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="field_form">
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+
+                                <label>@Localizer["Keywordlbl"]</label>
+                                <input type="text" asp-for="Command.Keyword" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <label>&nbsp;</label><br />
+
+                                <a href="#" class="btn btn-fill-line">Classify</a>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputEmail4">@Localizer["Hscodelbl"]</label>
+                                <input type="text" asp-for="Command.HsCode" id="code" class="form-control">
+                                <span class="text-danger" asp-validation-for="Command.HsCode"></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="field_form">
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <label>@Localizer["ProductValuelbl"]</label>
+                                <input type="text" asp-for="Command.FOB" class="form-control mb-2 mr-sm-2">
+                                <span class="text-danger" asp-validation-for="Command.FOB"></span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEmail4">@Localizer["Insurancelbl"]</label>
+                                <input type="text" asp-for="Command.Insurance" class="form-control">
+                                <span class="text-danger" asp-validation-for="Command.Insurance"></span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEmail4">@Localizer["Freightlbl"]</label>
+                                <input type="text" asp-for="Command.Freight" class="form-control">
+                                <span class="text-danger" asp-validation-for="Command.Freight"></span>
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <label>@Localizer["ContainerSizelbl"]</label>
+                                <select class="custom-select form-control first_null not_chosen" id="validationCustom04" asp-for="Command.ContainerSize">
+                                    <option selected="" value="">@LocalizationService.Get("SelectListDefault")</option>
+                                    <option value="20feet">20feet</option>
+                                    <option value="40feet">40feet</option>
+                                    <option value="45feet">45feet</option>
+                                    <option value="48feet">48feet</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <label>&nbsp;</label><br />
+                                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Calculate" />
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+
+        <!-- END SECTION QUERY -->
+    </div>
+</div>
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#code').autocomplete({
+                source: '@Url.Page("GeneralGoodsDuty", "SearchHscode")'
+            });
+        });
+    </script>
+}
+
+
+

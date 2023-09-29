@@ -1,0 +1,55 @@
+﻿@using Wbc.WebUI.Services
+@model Wbc.Application.MenuResource.Query.GetMenuResource.ResourceMenuVm
+@inject CommonLocalizationService LocalizationService
+
+
+@if (Model?.Resource != null)
+{
+
+    if (Model.Resource.Any())
+    {
+        <ul class="sidebar-nav">
+
+            @foreach (var topResource in Model.Resource.Where(x => x.IsActive).OrderBy(x => x.Order).GroupBy(x => x.Area.Parent.LocalizationKey))
+            {
+                <li class="sidebar-header">
+                    @LocalizationService.Get(@topResource.Key)
+                </li>
+
+                foreach (var resourceArea in topResource.Where(x => x.IsActive).OrderBy(x => x.Order).GroupBy(x => x.Area.LocalizationKey))
+                {
+                    <li class="sidebar-item" id="parent-@resourceArea.Key-header">
+                        <a id="parent-@resourceArea.Key" onclick="SetActiveMenu(this.id)" href="#@resourceArea.Key" data-toggle="collapse" class="sidebar-link">
+                            <i class="align-middle mr-2 @resourceArea.First().Area.IconUrl"></i> <span class="align-middle">@LocalizationService.Get(resourceArea.Key)</span>
+                        </a>
+                        <ul id="@resourceArea.Key" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
+
+                            @foreach (var resource in resourceArea.Where(x => x.IsActive).OrderBy(x => x.Order))
+                            {
+
+                                <li class="sidebar-item">
+                                    <a class="sidebar-link" asp-page="@resource.ResourcePage" asp-area="@resource.AreaName" >@LocalizationService.Get(resource.LocalLizationKey)</a>
+                                </li>
+
+                            }
+                        </ul>
+                    </li>
+
+                }
+
+            }
+
+        </ul>
+    }
+}
+
+
+<script>
+    var SetActiveMenu = function (menuId) {
+
+        localStorage.setItem("activeMenuHeader", menuId + "-header");
+        localStorage.setItem("actorMenu", menuId);
+        localStorage.setItem("openMenuHeader", menuId.split("-")[1]);
+
+    };
+</script>

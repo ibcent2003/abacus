@@ -1,0 +1,81 @@
+﻿@page
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Wbc.WebUI.Services
+@inject IStringLocalizer<DashboardModel> Localizer
+@inject IHtmlLocalizer<DashboardModel> HtmlLocalizer
+@model DashboardModel
+@using Microsoft.AspNetCore.Authorization
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+@{
+    ViewData["Title"] = "My Profile";
+    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+    var requestCulture = requestCultureFeature.RequestCulture;
+    Layout = "Shared/_PlainLayout";
+
+}
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section ActivePage
+    {
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+
+        </ol>
+    </nav>
+}
+
+<div class="section small_pt pb_20">
+    <div class="container">
+        <div class="heading_s1">
+            <h5>My Settings</h5>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                <div class="icon_box icon_box_style5">
+                    <div class="icon">
+                        <i class="flaticon-project"></i>
+                    </div>
+                    <div class="icon_box_content">
+                        <h6>My Subscription</h6>
+                        <p>View and manage your subscription plan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                <div class="icon_box icon_box_style5">
+                    <div class="icon">
+                        <i class="flaticon-deal"></i>                      
+                    </div>
+                    <div class="icon_box_content">
+                        <h6><a asp-page="DutySearchHistory" asp-area="DutyCalculator">Vehicle Calculated Duties</a></h6>
+                        <p>View search history of your vehicle calculated duty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                <div class="icon_box icon_box_style5">
+                    <div class="icon">
+                        <i class="flaticon-layout"></i>
+                    </div>
+                    <div class="icon_box_content">
+                        <h6><a asp-page="GeneralGoodsHistory" asp-area="GeneralGoods">Goods Calculated Duties</a></h6>
+                        <p>View search history of your general goods calculated duty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  
+
+    </div>
+</div>
+
+

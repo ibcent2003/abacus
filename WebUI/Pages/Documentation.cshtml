@@ -1,0 +1,30 @@
+﻿@page
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IStringLocalizer<DocumentationModel> Localizer
+@inject IHtmlLocalizer<DocumentationModel> HtmlLocalizer
+@model Wbc.WebUI.Pages.DocumentationModel
+@{
+    ViewData["Title"] = Localizer["Title"];
+    Layout = "Shared/_LayoutLatest";
+    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+    var requestCulture = requestCultureFeature.RequestCulture;
+}
+
+
+<!-- START SECTION Coming soon -->
+<div class="section pb_70">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-7 col-md-9 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.3s" style="animation-delay: 0.3s; opacity: 1;">
+                <div class="cs_content text-center">
+
+                    <h3 class="cs_title">This Page is Under Maintenance, It'll Be Back Shortly.</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START SECTION Coming soon -->

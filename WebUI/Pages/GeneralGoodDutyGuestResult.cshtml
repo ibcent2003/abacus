@@ -1,0 +1,481 @@
+﻿@page "{TransactionId}/{Id}"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.Extensions.Localization
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Pages.GeneralGoodDutyGuestResultModel
+@inject IStringLocalizer<GeneralGoodDutyGuestResultModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+    Layout = "_PlainLayout";
+
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+
+}
+
+
+@section ActivePage
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            @*<li class="breadcrumb-item"><a href="/">@LocalizationService.Get("IndexRes")</a></li>*@
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("GeneralGoodResultRes")</li>
+        </ol>
+    </nav>
+}
+@Html.AntiForgeryToken()
+
+
+<!-- START SECTION RESULT -->
+<div class="section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading_s1">
+                    <h2>Duty, Tax and Levies</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading_s1 text-center">
+                    <h5>@Model.userHscode.HsCode: @Model.userHscode.Keyword import into @Model.country.CountryName</h5>
+                </div>
+                <div class="tab-style1">
+                    <ul class="nav nav-tabs justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="hscodes-tab" data-toggle="tab" href="#hscodes" role="tab" aria-controls="hscodes" aria-selected="true">Duty and Taxes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="ra-tab" data-toggle="tab" href="#ra" role="tab" aria-controls="ra" aria-selected="false">Regulatory Requirement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="ts-tab" data-toggle="tab" href="#ts" role="tab" aria-controls="ts" aria-selected="false">Trade Statistics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="ln-tab" data-toggle="tab" href="#ln" role="tab" aria-controls="ln" aria-selected="false">Legal Notes</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="hscodes" role="tabpanel" aria-labelledby="hscodes-tab" style="margin-top: -40px">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="medium_divider clearfix"></div>
+                                    <div class="heading_s1">
+                                    </div>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th style="background-color:lightgray">Header</th>
+                                                <th>Values</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td style="background-color:lightgray">Product Name</td>
+                                                <td>@Model.userHscode.Keyword</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:lightgray">HS Code</td>
+                                                <td>@Model.userHscode.HsCode</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:lightgray">Cost(FOB)</td>
+                                                <td>@Model.userHscode.FOB.ToString("#,##0.00")</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:lightgray">Insurance</td>
+                                                <td>@Model.userHscode.Insurance.ToString("#,##0.00")</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:lightgray">Freight</td>
+                                                <td>@Model.userHscode.Freight.ToString("#,##0.00")</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:lightgray">Standard Unit of Quantity</td>
+                                                <td>@Model.userHscode.StandardUnitOfQuantity</td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="medium_divider clearfix"></div>
+                                    <div class="heading_s1">
+                                    </div>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th style="background-color:lightgray">Header</th>
+                                                <th scope="col">Values</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="background-color:lightgray">Exporting Country</td>
+                                                <td scope="col">@Model.Exportingcountry.CountryName</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:lightgray">Currency</td>
+                                                <td>@Model.currency.Name</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:lightgray">Importing Country</td>
+                                                <td>@Model.country.CountryName</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="background-color:lightgray">Container Size</td>
+                                                <td>@Model.userHscode.ContainerSize</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:lightgray">CIF</td>
+                                                <td>
+                                                    @{
+                                                        var totalCIF = Model.userHscode.FOB + Model.userHscode.Freight + Model.userHscode.Insurance;
+
+                                                    }
+                                                    @totalCIF.ToString("#,##0.00")
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="background-color:lightgray">Exhange Rate</td>
+                                                <td>
+                                                    @Model.extraTax.TaxValue
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="medium_divider clearfix"></div>
+                                    <div class="heading_s1">
+                                    </div>
+                                  
+                                        <table class="table table-bordered">
+                                            @foreach (var t in Model.userTariffExtraTaxes)
+                                            {
+                                                <tbody>
+
+                                                    <tr class="warning">
+                                                        <td>
+                                                            @t.TaxName
+
+                                                        </td>
+                                                        @if (t.IsRate == true)
+                                                        {
+                                                            <td>@t.TaxValue%</td>
+                                                        }
+                                                        else
+                                                        {
+                                                            if (t == Model.userTariffExtraTaxes.Last())
+                                                            {
+                                                                <td>@Model.country.CurrencyCode @t.TaxValue.ToString("#,##0.00")</td>
+                                                            }
+                                                            else
+                                                            {
+                                                                <td>@Model.currency.Name @t.TaxValue.ToString("#,##0.00")</td>
+                                                            }
+                                                        }
+
+                                                    </tr>
+
+
+                                                </tbody>
+                                            }
+                                        </table>
+                                        @if (Model.HasBechMark == true)
+                                        {
+                                            <div class="mb-3">
+                                                <div class="alert alert-primary alert-outline alert-dismissible" role="alert">
+                                                    <div class="alert-message">
+                                                        <p>
+                                                            Dear valued customer/trader, your product may attract further depreciation in unit price after declaring  to GRA Customs for valuation and classification  assessment, this is due to the vice president directive of 50% reduction on commodity transactional value/unit price on the 4th of April 2019. <br><br> NB. Benchmark values are transaction values declared by importers and captured in our Tansaction Price Database (TPD); they are used as an internal risk assessment tool  for Customs valuation purposes by the Customs Technical Services Bureau. Benchmark values assist us to quickly assess valuation risks of targetted goods; we also use same to combat trade misinvoicing in the nature of underinvoicing, overinvoicing, valuation fraud and transfer pricing between related parties.
+                                                        </p>
+                                                        <hr>
+                                                        <div class="btn-list">
+                                                            <p>Thank You.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                        </div>
+                                   
+                                </div>
+
+
+                        </div>
+
+
+                        <div class="tab-pane fade" id="ra" role="tabpanel" aria-labelledby="ra-tab">
+                            <div id="accordion" class="accordion accordion_style1">
+                                <div class="heading_s1">
+                                    <hr />
+                                </div>
+                                @if (Model.agencies.Count() != 0)
+                                {
+
+
+                                    foreach (var a in Model.agencies)
+                                    {
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                                <h5 class="mb-0">
+                                                    <a class="collapsed" data-toggle="collapse" href="#id_@a.Id" aria-expanded="false" aria-controls="collapseOne">@a.AgencyName.ToUpper()</a>
+                                                </h5>
+                                            </div>
+                                            <div id="id_@a.Id" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                                <div class="card-body">
+                                                    @if (Model.AgencyHsCode.Count() != 0)
+                                                    {
+
+                                                        @foreach (var t in Model.AgencyHsCode.Where(x => x.AgencyId == a.Id))
+                                                        {
+
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="heading_s1">
+
+                                                                        @if (t.DocumentType.DocumentTypeName == "Not Required")
+                                                                        {
+                                                                            <h6>Permit @t.DocumentType.DocumentTypeName</h6>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <h6>Requirements for @t.DocumentType.DocumentTypeName</h6>
+                                                                        }
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                @foreach (var e in Model.documentValues.Where(X => X.ExtraName != "Detail Permit"))
+                                                                    {
+                                                                <div class="col-lg-4 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                                                                        <div class="icon_box icon_box_style5">
+                                                                            <div class="icon">
+                                                                                <i class="flaticon-bar-chart"></i>
+                                                                            </div>
+                                                                            @if (e.ExtraName == "Inspection Fee")
+                                                                            {
+                                                                                <div class="icon_box_content">
+                                                                                    <h5>@e.ExtraName</h5>
+
+                                                                                    @if (e.ExtraValue.Length > 30)
+                                                                                    {
+                                                                                        <p>  click here</p>
+                                                                                    }
+                                                                                    else
+                                                                                    {
+                                                                                        <p> @e.ExtraValue</p>
+                                                                                    }
+
+                                                                                </div>
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                <div class="icon_box_content">
+                                                                                    <h5>@e.ExtraName</h5>
+                                                                                    <p>@e.ExtraValue</p>
+                                                                                </div>
+                                                                            }
+
+                                                                        </div>
+                                                                    </div>
+                                                                }
+                                                                @{
+                                                                    @*var extraVa = Model.documentValues.Where(x => x.ExtraName == "Detail Permit").FirstOrDefault();
+                                                                        if (extraVa != null)
+                                                                        {
+                                                                            <div class="col-lg-12 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                                                                                <div class="icon_box icon_box_style5">
+                                                                                    <div class="icon">
+                                                                                        <i class="flaticon-bar-chart"></i>
+                                                                                    </div>
+
+                                                                                            <div class="icon_box_content">
+                                                                                                <h5>@extraVa.ExtraName</h5>
+
+                                                                                                <p> @extraVa.ExtraValue</p>
+                                                                                            </div>
+
+                                                                                </div>
+                                                                            </div>*@
+
+                                                                }
+                                                                }
+
+
+                                                            </div>
+
+                                                        }
+
+                                                        <hr />
+
+                                                    }
+
+                                                    @*<div class="row justify-content-center">
+                                                            @foreach (var d in Model.documentCategories)
+                                                            {
+                                                                var list = Model.dict.FirstOrDefault(x => x.Key == d).Value;
+                                                                <div class="col-lg-6 col-sm-6 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">
+                                                                    <div class="icon_box icon_box_style2 box_shadow1 radius_all_5">
+
+                                                                        <div class="icon_box_content">
+                                                                            <h6>@d</h6><br>
+
+
+                                                                            @foreach (var doc in list)
+                                                                            {
+                                                                                {
+                                                                                    var myarray = doc.Split(',');
+                                                                                    for (var i = 0; i < myarray.Length; i++)
+                                                                                    {
+                                                                                        var getdoc = Model.documentType.Where(x => x.DocumentTypeCode == myarray[i]).FirstOrDefault();
+                                                                                        if (getdoc != null)
+                                                                                        {
+
+                                                                                            <div class="list_style3">
+                                                                                                <ul>
+                                                                                                    <li>
+
+                                                                                                        @getdoc.DocumentTypeName
+
+
+                                                                                                    </li>
+
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        }
+                                                                                    }
+                                                                                }
+
+
+                                                                            }
+
+
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                                                }
+                                                        </div>*@
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <div class="alert alert_style1 alert-danger" role="alert">
+                                        <i class="ion-close-circled"></i>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                        No regulatory requirements has been added.
+                                    </div>
+                                }
+
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="ts" role="tabpanel" aria-labelledby="ts-tab">
+                            <div class="alert alert_style1 alert-info" role="alert">
+                                <i class="ion-information-circled"></i>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                Coming Soon!
+                            </div>
+                            <div class="row justify-content-center">
+
+                                @*<div class="col-xl-3 col-sm-6 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">
+                                        <div class="icon_box icon_box_style3 box_shadow1 radius_all_5 text-center">
+                                            <div class="icon">
+                                                <i class="flaticon-creativity"></i>
+                                            </div>
+                                            <div class="icon_box_content">
+                                                <h5>Total Import</h5>
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-sm-6 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.3s" style="animation-delay: 0.3s; opacity: 1;">
+                                        <div class="icon_box icon_box_style3 box_shadow1 radius_all_5 text-center">
+                                            <div class="icon">
+                                                <i class="flaticon-layout"></i>
+                                            </div>
+                                            <div class="icon_box_content">
+                                                <h5>Rank in Global Import</h5>
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-sm-6 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                                        <div class="icon_box icon_box_style3 box_shadow1 radius_all_5 text-center">
+                                            <div class="icon">
+                                                <i class="flaticon-email"></i>
+                                            </div>
+                                            <div class="icon_box_content">
+                                                <h5>Import Growth</h5>
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-sm-6 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
+                                        <div class="icon_box icon_box_style3 box_shadow1 radius_all_5 text-center">
+                                            <div class="icon">
+                                                <i class="flaticon-bar-chart"></i>
+                                            </div>
+                                            <div class="icon_box_content">
+                                                <h5>Import Trend</h5>
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                                            </div>
+                                        </div>
+                                    </div>*@
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ln" role="tabpanel" aria-labelledby="ln-tab">
+                            <div class="heading_s1 mb-3 mb-md-5" style="text-align:center">
+                                <h3>SECTION  @Model.Sector.RomanFigure</h3>
+                                <p>@Model.Sector.Title</p>
+                            </div>
+
+                            <div class="heading_s1 mb-3 mb-md-5" style="text-align:center">
+                                <h3>CHAPTER @Model.Segment.Code</h3>
+                                <p>@Html.Raw(Model.Segment.Description)</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@*@section LocalizationService{
+        <partial name="_ValidationScriptsPartial" />
+
+    }*@

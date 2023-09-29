@@ -1,0 +1,228 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.Extensions.Localization
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.DutyCalculator.Pages.SearchByMakeModel
+@inject IStringLocalizer<SearchByMakeModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+    Layout = "_LayoutLatest";
+
+}
+
+@*@section PageName
+    {
+        @Localizer["PageName"]
+
+    }
+
+
+    @section BreadCrumbs
+    {
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+                <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("SearchByMakeRes")</li>
+            </ol>
+        </nav>
+    }*@
+
+<div class="breadcrumb_section page_small page_title_light background_bg " data-img-src="/assets/images/banner.png" style="        background-image: url(&quot;/assets/images/banner.png&quot;);">
+    <div class="container">
+        <!-- STRART CONTAINER -->
+
+        <div class="row align-items-center">
+            <div class="col-lg-5 offset-lg-1 col-md-5">
+
+            </div>
+            <div class="col-lg-6 col-md-7 order-md-first">
+                <div class="page-title">
+                    <h1>New & Used Vehicle Duty<br />Calculator</h1>
+                </div>
+                <span><strong style="color:#292b2c;">Get estimated duty for new and used vehicle</strong></span>
+                <span><br /></span>
+                <span style="color:#292b2c;">Discover detailed information about Custom Duty, Tax and Levies</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- END CONTAINER-->
+</div>
+
+@Html.AntiForgeryToken()
+
+
+<div class="section bg_linen pb_20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading_s1">
+                    <h2>@Localizer["SearchByMakeFormHeader"]</h2>
+                </div>
+            </div>
+        </div>
+        <form asp-page="SearchByMake" method="post">
+
+
+          
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="field_form">
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <label>@LocalizationService.Get("SelectListDefaultValueMake")</label>
+                                <select class="custom-select form-control" asp-for="Command.MakeId" asp-items="Model.MakeListdll">
+                                    <option value="">@LocalizationService.Get("SelectListDefault")</option>
+                                </select>
+                                <span class="text-danger" asp-validation-for="Command.MakeId"></span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEmail4">@LocalizationService.Get("SelectListDefaultValueModel")</label>
+                                <select class="custom-select form-control" asp-for="Command.ModelId">
+                                    <option value="">@LocalizationService.Get("SelectListDefault")</option>
+                                </select>
+                                <span class="text-danger" asp-validation-for="Command.ModelId"></span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEmail4">@LocalizationService.Get("SelectListDefaultValueVehicleType")</label>
+                                <select class="custom-select form-control" asp-for="Command.VehicleTypeName">
+                                    <option value="">@LocalizationService.Get("SelectListDefault")</option>
+                                </select>
+                                <span class="text-danger" asp-validation-for="Command.VehicleTypeName"></span>
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <label>@LocalizationService.Get("SelectListDefaultValueFeatures")</label>
+                                <select class="custom-select form-control" asp-for="Command.Features">
+                                    <option value="">@LocalizationService.Get("SelectListDefault")</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <label>@LocalizationService.Get("SelectListDefaultValueSeating")</label>
+                                <select class="custom-select form-control" asp-for="Command.SeatingCapacity">
+                                    <option value="">@LocalizationService.Get("SelectListDefault")</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEmail4">@Localizer["EngineCapacitylbl"]</label>
+                                <input type="text" asp-for="Command.EngineCapacity" class="form-control" placeholder="eg. 1800">
+                                <span class="text-danger" asp-validation-for="Command.EngineCapacity"></span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEmail4">@LocalizationService.Get("SelectListDefaultValueFuelType")</label>
+                                <select class="custom-select form-control" asp-for="Command.FuelType">
+                                    <option value="">@LocalizationService.Get("SelectListDefault")</option>
+                                    <option value="Petrol">Petrol</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="Gas">Gas</option>
+                                    <option value="Other">Other</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <label>@LocalizationService.Get("SelectListDefaultValueCurrency")</label>
+                                <select class="custom-select form-control" asp-for="Command.CurrencyId" asp-items="Model.Currencylist">
+                                    <option value="">@LocalizationService.Get("SelectListDefault")</option>
+                                </select>
+                                <span class="text-danger" asp-validation-for="Command.CurrencyId"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <label>@Localizer["Yearlbl"]</label>
+                                <input type="text" asp-for="Command.Year" class="form-control" placeholder="eg. 2019">
+                                <span class="text-danger" asp-validation-for="Command.Year"></span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEmail4">@LocalizationService.Get("SelectListDefaultValueCountry")</label>
+
+                                <select class="custom-select form-control" asp-for="Command.CountryId" asp-items="Model.CountryList">
+                                    <option value="">@LocalizationService.Get("SelectListDefault")</option>
+                                </select>
+                                <span class="text-danger" asp-validation-for="Command.CountryId"></span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                @*<label for="inputEmail4">@Localizer["SelectListDefaultValueCountry"]</label>
+        <input type="text" asp-for="Command.Year" class="form-control" placeholder="Cost eg. 10000">*@
+
+                                <label>&nbsp;</label><br />
+                                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Calculate" />
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+
+        <!-- END SECTION QUERY -->
+    </div>
+</div>
+
+
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(function () {
+            $("#Command_MakeId").on("change", function () {
+                var makeId = $(this).val();
+                $("#Command_ModelId").empty();
+                $("#Command_ModelId").append("<option value=''>@LocalizationService.Get("SelectListDefaultValueModel")</option>");
+                $.getJSON(`?handler=Models&MakeId=${makeId}`, (data) => {
+                    $.each(data, function (i, item) {
+                        $("#Command_ModelId").append(`<option value="${item.id}">${item.modelName}</option>`);
+                    });
+                });
+
+
+                $("#Command_VehicleTypeName").empty();
+                $("#Command_VehicleTypeName").append("<option value=''>@LocalizationService.Get("SelectListDefaultValueVehicleType")</option>");
+                $.getJSON(`?handler=VehicleTypes&MakeId=${makeId}`, (v_data) => {
+                    $.each(v_data, function (i, item) {
+                        $("#Command_VehicleTypeName").append(`<option value="${item.name}">${item.name}</option>`);
+                    });
+                });
+
+
+                $("#Command_Features").empty();
+                $("#Command_Features").append("<option value=''>@LocalizationService.Get("SelectListDefaultValueFeatures")</option>");
+                $.getJSON(`?handler=Features&MakeId=${makeId}`, (f_data) => {
+                    $.each(f_data, function (i, item) {
+                        $("#Command_Features").append(`<option value="${item.specialFeatureName}">${item.specialFeatureName}</option>`);
+                    });
+                });
+
+
+            });
+        });
+    </script>
+}

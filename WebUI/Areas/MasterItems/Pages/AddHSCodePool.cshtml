@@ -1,0 +1,93 @@
+﻿@page
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MasterItems.Pages.AddHSCodePoolModel
+@inject IStringLocalizer<Pages.AddHSCodePoolModel> Localizer
+@inject CommonLocalizationService LocalizationService
+
+@section Css
+{
+    <link href="~/lib/Select2/css/select2-bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/Select2/css/select2.css" rel="stylesheet" />
+    <link href="~/lib/CountryList/css/countrySelect.css" rel="stylesheet" />
+
+}
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListHSCodePool",new {area="MasterItems"})">@LocalizationService.Get("ListHSCodePoolRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("AddHSCodePoolRes")</li>
+        </ol>
+    </nav>
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["FormHeader"]</h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="AddHSCodePool" method="post">
+            <div class="col-md-7">
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.HSCode"> @Localizer["HSCodelbl"] :</label>
+                    <input required class="form-control form-control-lg" asp-for="Command.HSCode" />
+                    <span class="text-danger" asp-validation-for="Command.HSCode"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.Heading"> @Localizer["Headinglbl"] :</label>
+                    <input required class="form-control form-control-lg" asp-for="Command.Heading" />
+                    <span class="text-danger" asp-validation-for="Command.Heading"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.Description"> @Localizer["Descriptionlbl"] :</label>
+                    <input asp-for="Command.Description" class="form-control form-control-lg" />
+                    <span class="text-danger" asp-validation-for="Command.Description"></span>
+                </div>
+                <div class="form-group form-group-lg">
+                    <label class="col-form-label" asp-for="Command.CountryId"> @Localizer["CountryIdlbl"] :</label>
+                    <select class="form-control form-control-lg" asp-for="Command.CountryId" asp-items="Model.CountryList">
+                        <option value="">@LocalizationService.Get("SelectListDefaultValue")</option>
+                    </select>
+                    <span class="text-danger" asp-validation-for="Command.CountryId"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.StandardUnitOfQuantity"> @Localizer["StandardUnitOfQuantitylbl"] :</label>
+                    <input asp-for="Command.StandardUnitOfQuantity" class="form-control form-control-lg" min="1" />
+                    <span class="text-danger" asp-validation-for="Command.StandardUnitOfQuantity"></span>
+                </div>
+
+                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/lib/Select2/js/select2.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        var placeholder = '@LocalizationService.Get("SelectListDefaultValue")';
+
+        $(document).ready(function () {
+            $('#Command_CountryId').select2({
+                placeholder: placeholder,
+                theme: "bootstrap"
+
+            });
+        });
+    </script>
+}

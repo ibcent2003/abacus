@@ -1,0 +1,99 @@
+﻿@page
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.Permission.Pages.AddPermissionModel
+@inject IStringLocalizer<Pages.AddPermissionModel> Localizer
+@inject CommonLocalizationService LocalizationService
+
+@section Css
+{
+    <link href="~/lib/Select2/css/select2-bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/Select2/css/select2.css" rel="stylesheet" />
+
+}
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListPermission",new {area="Permission"})">@LocalizationService.Get("ListPermissionRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("AddPermissionRes")</li>
+        </ol>
+    </nav>
+}
+
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["FormHeader"]</h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="AddPermission" method="post" data-toggle="validator">
+            <div class="col-md-7">
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.PermissionName"> @Localizer["PermissionNamelbl"] :</label>
+                    <input class="form-control form-control-lg" asp-for="Command.PermissionName" />
+                    <span class="text-danger" asp-validation-for="Command.PermissionName"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.PersmissionDescription"> @Localizer["PermissionDescriptionlbl"] :</label>
+                    <input asp-for="Command.PersmissionDescription" class="form-control form-control-lg" />
+                    <span class="text-danger" asp-validation-for="Command.PersmissionDescription"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.LocalizationKey"> @Localizer["LocalizationKeylbl"] :</label>
+                    <input asp-for="Command.LocalizationKey" class="form-control form-control-lg" />
+                    <span class="text-danger" asp-validation-for="Command.LocalizationKey"></span>
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" asp-for="Command.RequireAdminRole" class="custom-control-input" placeholder="@Localizer["RequireAdminRolelbl"]" />
+                        <label class="custom-control-label" asp-for="Command.RequireAdminRole"> @Localizer["RequireAdminRolelbl"]</label>
+                    </div>
+                    <span class="text-danger" asp-validation-for="Command.RequireAdminRole"></span>
+                </div>
+                <div class="form-group form-group-lg">
+                    <label class="col-form-label" asp-for="Command.DependentPermissionId"> @Localizer["DependentPermissionlbl"] :</label>
+                    <select class="form-control form-control-lg" asp-for="Command.DependentPermissionId" asp-items="Model.PermissionList">
+                        <option value="">@LocalizationService.Get("SelectListDefaultValue")</option>
+                    </select>
+                    <span class="text-danger" asp-validation-for="Command.DependentPermissionId"></span>
+                </div>
+                <div class="form-group">
+                    <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Create" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script src="~/lib/Select2/js/select2.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        var placeholder = '@LocalizationService.Get("SelectListDefaultValue")';
+
+        $(document).ready(function () {
+            $('#Command_DependentPermissionId').select2({
+                placeholder: placeholder,
+                theme: "bootstrap"
+
+            });
+        });
+    </script>
+}
+

@@ -1,0 +1,70 @@
+﻿@page "{Id}"
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MenuResource.Pages.DeleteResourceModel
+@inject IStringLocalizer<Pages.DeleteResourceModel> Localizer
+@inject CommonLocalizationService LocalizationService
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListResource",new {area="MenuResource"})">@LocalizationService.Get("ListResourcesRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("DeleteResourceRes")</li>
+        </ol>
+    </nav>
+}
+
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title"><p class="text-danger">@Localizer["DeleteConfirmationMessage"]</p></h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="DeleteResource" method="post">
+            <div class="col-md-6">
+                <input asp-for="DeleteResourceCommand.Id" type="hidden" />
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="DeleteResourceCommand.AreaName"> @Localizer["Arealbl"] :</label>
+                    <input class="form-control form-control-lg" asp-for="DeleteResourceCommand.AreaName" readonly="readonly" />
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="DeleteResourceCommand.ResourcePage"> @Localizer["RsourceNamelbl"] :</label>
+                    <input readonly="readonly" class="form-control form-control-lg" asp-for="DeleteResourceCommand.ResourcePage" />
+
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="DeleteResourceCommand.LocalLizationKey"> @Localizer["LocalizationKeylbl"] :</label>
+                    <input readonly="readonly" asp-for="DeleteResourceCommand.LocalLizationKey"  class="form-control form-control-lg" />
+
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="DeleteResourceCommand.Order"> @Localizer["Orderlbl"] :</label>
+                    <input asp-for="DeleteResourceCommand.Order" readonly="readonly" class="form-control form-control-lg"  min="1" />
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="DeleteResourceCommand.PersmissionDescription"> @Localizer["Permissionlbl"] :</label>
+                    <input asp-for="DeleteResourceCommand.PersmissionDescription" readonly="readonly" class="form-control form-control-lg" />
+                </div>
+                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Delete" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,116 @@
+2020-09-16T09:45:29.4404171+00:00 0HM2Q4KN7QJ8A:00000007 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1664 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T09:47:26.5596226+00:00 0HM2Q4LMTAHQ6:00000007 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2909 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T10:22:34.7561884+00:00 0HM2Q59M8R5B2:00000001 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (549 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T12:24:14.4565585+00:00 0HM2Q5NAI6FI2:00000013 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (611 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T12:28:25.2873202+00:00 0HM2Q7FQM52QR:00000157 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (630 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-16T12:35:20.7027263+00:00 0HM2Q7FQM52R2:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1292 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-16T12:36:40.6526954+00:00 0HM2Q7FQM52R2:00000027 [WRN] Wbc.Cube Long Running Request: "CreateGeneralGoodsSearchCommand" (1424 milliseconds) "b6c506ed-3286-463c-b943-720b27552adb" "(null)" CreateGeneralGoodsSearchCommand { HsCode: "1508.90.10.00", FOB: 1200, Freight: 10, Insurance: 40, CurrencyId: 111, CountryId: 1, ExportingCountryId: 3, Keyword: "EDIBLE GROUNDNUT OIL", ContainerSize: "20feet" } (6c601218)
+2020-09-16T13:16:06.0605013+00:00 0HM2Q7FQM52R3:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1156 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T13:16:46.2416657+00:00 0HM2Q7FQM52R3:00000011 [ERR] Failed executing DbCommand ("16,238"ms) [Parameters=["@__request_UserId_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COALESCE([p].[DependentPermissionId], 0) AS [DependentPermissionId], [p].[Id], [p].[LocalizationKey], [p].[PermissionName], [p].[PersmissionDescription], [p].[RequireAdminRole]
+FROM [UserPermissions] AS [u]
+INNER JOIN [Permissions] AS [p] ON [u].[PermissionId] = [p].[Id]
+WHERE [u].[UserId] = @__request_UserId_0" (627a98df)
+2020-09-16T13:16:46.2875221+00:00 0HM2Q7FQM52R3:00000011 [ERR] An exception occurred while iterating over the results of a query for context type '"Wbc.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: Session Provider, error: 19 - Physical connection is not usable)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:49487653-9943-4ac5-a957-17178efb53e5
+Error Number:-1,State:0,Class:20" (f5c7ac34)
+Microsoft.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: Session Provider, error: 19 - Physical connection is not usable)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+ClientConnectionId:49487653-9943-4ac5-a957-17178efb53e5
+Error Number:-1,State:0,Class:20
+2020-09-16T13:16:46.4497136+00:00 0HM2Q7FQM52R3:00000011 [ERR] Wbc.Cube Request: Unhandled Exception for Request "GetUserPermissionsQuery" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (47efab21)
+Microsoft.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: Session Provider, error: 19 - Physical connection is not usable)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Wbc.Application.Permission.Query.GetPermission.GetUserPermissionQueryHandler.Handle(GetUserPermissionsQuery request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Permission\Query\GetPermission\GetUserPermissionsQuery.cs:line 32
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+   at Wbc.Application.Common.Behaviours.RequestPerformanceBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\RequestPerformanceBehaviour.cs:line 31
+ClientConnectionId:49487653-9943-4ac5-a957-17178efb53e5
+Error Number:-1,State:0,Class:20
+2020-09-16T13:16:46.6364680+00:00 0HM2Q7FQM52R3:00000011 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: Session Provider, error: 19 - Physical connection is not usable)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Wbc.Application.Permission.Query.GetPermission.GetUserPermissionQueryHandler.Handle(GetUserPermissionsQuery request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Permission\Query\GetPermission\GetUserPermissionsQuery.cs:line 32
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+   at Wbc.Application.Common.Behaviours.RequestPerformanceBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\RequestPerformanceBehaviour.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Wbc.WebUI.Services.PermissionToClaimsExtender.TransformAsync(ClaimsPrincipal principal) in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Services\PermissionToClaimsExtender.cs:line 28
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:49487653-9943-4ac5-a957-17178efb53e5
+Error Number:-1,State:0,Class:20
+2020-09-16T13:55:11.1409444+00:00 0HM2Q7FQM52R4:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1028 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T14:18:35.3552321+00:00 0HM2Q98DBGUT2:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1362 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T14:33:06.2039816+00:00 0HM2Q9LFQ58CT:00000053 [WRN] Wbc.Cube Long Running Request: "GetSubmittedDutyCountQuery" (1102 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" GetSubmittedDutyCountQuery {  } (6c601218)
+2020-09-16T14:33:07.1873648+00:00 0HM2Q9LFQ58CT:00000061 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (629 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-16T14:33:07.1873648+00:00 0HM2Q9LFQ58CT:0000005F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (629 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-16T14:33:07.3846246+00:00 0HM2Q9LFQ58CT:00000067 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (520 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-16T14:53:38.9502039+00:00 0HM2QA10M5G0C:0000002B [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (543 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T15:14:58.3203229+00:00 0HM2QACS1THOH:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1401 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T15:26:03.5214235+00:00 0HM2QAJ0FRQQA:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1228 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T15:38:32.3058421+00:00 0HM2QAJ0FRQQB:0000001D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1244 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T15:39:09.7375733+00:00 0HM2QAJ0FRQQB:0000001F [WRN] Wbc.Cube Long Running Request: "CreateVehiclePoolCommand" (1812 milliseconds) "b6c506ed-3286-463c-b943-720b27552adb" "(null)" CreateVehiclePoolCommand { Id: 0, MakeId: 16, ModelId: 324, VehicleTypeName: "Saloon", SpecialFeatureName: "LE", SeatingCapacity: 5, EngineCapacity: "2000", FuelType: "Petrol", Year: 2012, CurrencyId: 111, CountryId: 1 } (6c601218)
+2020-09-16T16:05:20.4892639+00:00 0HM2QAJ0FRQQC:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1337 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T16:25:45.1556483+00:00 0HM2QAJ0FRQQD:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1371 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T20:44:34.9646338+00:00 0HM2QG51OFD9C:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1589 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T20:58:22.7950160+00:00 0HM2QG51OFD9D:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1075 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T21:50:38.8390799+00:00 0HM2QG51OFD9E:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (862 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-16T21:51:19.1911302+00:00 0HM2QG51OFD9E:00000021 [WRN] Wbc.Cube Long Running Request: "CreateHSCodeSearchCommand" (1019 milliseconds) "b6c506ed-3286-463c-b943-720b27552adb" "(null)" CreateHSCodeSearchCommand { HScode: "3920.92.00.00", CountryId: 2 } (6c601218)

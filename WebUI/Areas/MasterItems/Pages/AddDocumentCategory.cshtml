@@ -1,0 +1,57 @@
+﻿@page
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MasterItems.Pages.AddDocumentCategoryModel
+@inject IStringLocalizer<Pages.AddDocumentCategoryModel> Localizer
+@inject CommonLocalizationService LocalizationService
+
+@section Css
+{
+
+    <link href="~/lib/Select2/css/select2.css" rel="stylesheet" />
+}
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListDocumentCategory",new {area="MasterItems"})">@LocalizationService.Get("ListDocumentCategoryRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("AddDocumentCategoryRes")</li>
+        </ol>
+    </nav>
+}
+
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["FormHeader"]</h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="AddDocumentCategory" method="post">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.CategoryName"> @Localizer["CategoryNamelbl"] :</label>
+                    <input required class="form-control form-control-lg" asp-for="Command.CategoryName" />
+                    <span class="text-danger" asp-validation-for="Command.CategoryName"></span>
+                </div>
+                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
+

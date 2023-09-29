@@ -1,0 +1,78 @@
+﻿@page "{Id}"
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MasterItems.Pages.DeleteProcessRequiredDocumentModel
+@inject IStringLocalizer<Pages.DeleteProcessRequiredDocumentModel> Localizer
+@inject CommonLocalizationService LocalizationService
+
+@section Css
+{
+
+    <link href="~/lib/Select2/css/select2.css" rel="stylesheet" />
+}
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListProcess",new {area="MasterItems"})">@LocalizationService.Get("ListProcessRes")</a></li>
+            <li class="breadcrumb-item"><a asp-page="updateprocess" asp-route-id="@Model.Command.ProcessId">@Model.Command.ProcessName</a></li>
+            <li class="breadcrumb-item"><a asp-page="addprocessrequireddocument" asp-route-id="@Model.Command.ProcessId">@LocalizationService.Get("AddProcessRequiredDocumentRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("DeleteProcessRequiredDocumentRes")</li>
+        </ol>
+    </nav>
+}
+
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title"><p class="text-danger">@Localizer["FormHeader"]</p></h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="DeleteProcessRequiredDocument" method="post">
+
+            <div class="col-md-6">
+                <input asp-for="Command.Id" type="hidden" />
+                <input asp-for="Command.ProcessId" type="hidden" />
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.ProcessName"> @Localizer["ProcessIdlbl"] :</label>
+                    <input class="form-control form-control-lg" asp-for="Command.ProcessName" readonly="readonly" />
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.ProcessCode"> @Localizer["ProcessCodelbl"] :</label>
+                    <input readonly="readonly" class="form-control form-control-lg" asp-for="Command.ProcessCode" placeholder="@Localizer["ProcessCodelbl"]" />
+
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.DocumentName"> @Localizer["RequiredDocumentIdlbl"] :</label>
+                    <input readonly="readonly" asp-for="Command.DocumentName" placeholder="@Localizer["RequiredDocumentIdlbl"]" class="form-control form-control-lg" />
+
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" readonly="readonly" asp-for="Command.Mandatory" class="custom-control-input" placeholder="@Localizer["Mandatorylbl"]" />
+                        <label class="custom-control-label" asp-for="Command.Mandatory"> @Localizer["Mandatorylbl"]</label>
+                    </div>
+                </div>
+                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Delete" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

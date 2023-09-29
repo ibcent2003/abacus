@@ -1,0 +1,34 @@
+﻿@page
+
+@model Wbc.WebUI.Pages.StatusCodeErrorModel
+@{
+
+    ViewData["Title"] = @Model.ErrorStatusCode;
+
+    Layout = "_ExceptionLayout";
+}
+
+<div class="text-center">
+
+    <h1 class="display-1 font-weight-bold">@Model.ErrorStatusCode</h1>
+
+    <p class="h1">
+
+        An error occurred while processing your request.
+
+        @if (Model.ShowRequestId)
+            {
+                <h3>Request ID</h3>
+                <p>
+                    <code>@Model.RequestId</code>
+                </p>
+            }
+    </p>
+
+    <p class="h2 font-weight-normal mt-3 mb-4">The server encountered something unexpected that didn't allow it to complete the request.</p>
+
+    @if (Model.ShowOriginalUrl)
+        {
+            <a href="@Model.OriginalUrl" class="btn btn-primary btn-lg">Return to website</a>
+        }
+</div>

@@ -1,0 +1,125 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.Workflow.Pages.InboxModel
+@inject IStringLocalizer<InboxModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+
+@{
+    <link href="~/lib/DataTables/datatables.css" rel="stylesheet" />
+}
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("ListInboxRes")</li>
+        </ol>
+    </nav>
+}
+
+@Html.AntiForgeryToken()
+
+
+<div class="card">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+        <div class="table table-responsive">
+            <table id="inbox" class="table table-striped table-condensed" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th>
+                            S/N
+                        </th>
+                        <th>
+                            @Localizer["ProcessNameColumn"]
+                        </th>
+                        <th>
+                            @Localizer["StateNameColumn"]
+                        </th>
+                        <th>
+                            @Localizer["SubmittedOnColumn"]
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script src="~/lib/DataTables/datatables.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            var detailsBtnlbl = '@LocalizationService.Get("DataTableDetailsBtnlbl")';
+
+            var columns = [
+                { "data": "id", "orderable": false },
+                { "data": "processName", "orderable": true },
+                { "data": "stateName", "orderable": true },
+                { "data": "submittedOn", "orderable": false },
+                {
+                    "data": "documentSource",
+                    "orderable": false,
+                    "sClass": "text-center",
+                    "render": function(data, type, row)
+                    {
+                        return  '<a  href="' + data + '"><i class="fas fa-folder"></i> ' + detailsBtnlbl + ' </a>';
+                    }
+                }
+            ];
+
+
+            $('#inbox').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "responsive" : true,
+                "info": true,
+                "stateSave": true,
+                "lengthMenu":
+                [
+                    [10, 20, 50, -1], [10, 20, 50, "All"]
+                ],
+                "ajax": {
+                    "url":
+                        '/Workflow/Inbox',
+                    "type": "POST",
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val()
+                    }
+                },
+                "fnRowCallback": function(nRow, aData, iDisplayIndex)
+                {
+                    $("td:first", nRow).html(iDisplayIndex + 1 + this.api().page.info().start);
+
+                    return nRow;
+                },
+                "columns": columns,
+                "order": [[1, "asc"]]
+            });
+        });
+
+    </script>
+}

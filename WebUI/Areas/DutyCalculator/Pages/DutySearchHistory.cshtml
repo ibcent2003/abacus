@@ -1,0 +1,160 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.DutyCalculator.Pages.DutySearchHistoryModel
+@inject IStringLocalizer<DutySearchHistoryModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+@{
+    <link href="~/lib/DataTables/datatables.css" rel="stylesheet" />
+    Layout = "_PlainLayout";
+}
+
+@{
+    ViewData["Title"] = Localizer["PageName"];
+
+}
+
+@section PageName
+    {
+    @Localizer["PageName"]
+}
+
+
+
+@section ActivePage
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("DutySearchHistoryRes")</li>
+        </ol>
+    </nav>
+}
+
+@Html.AntiForgeryToken()
+
+ 
+
+<div class="section small_pt pb_20">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-sm-12 col-md-12">
+
+                <div class="heading_s1">
+                    <h5>@LocalizationService.Get("GeneralGoodsHistoryRes")</h5>
+                </div>
+
+                <div class="">
+                    <table id="vehicleHistory" class="table table-striped table-condensed" style="width: 100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    S/N
+                                </th>
+
+                                <th>
+                                    Make  @*@Localizer["VehicleMakeColumn"]*@
+                                </th>
+                                <th>
+                                    Model    @*@Localizer["VehicleModelColumn"]*@
+                                </th>
+                                <th>
+                                    Year @*@Localizer["VehicleYearColumn"]*@
+                                </th>
+                                <th>
+                                    Chassis @*@Localizer["ChassisColumn"]*@
+                                </th>
+                                <th>
+                                    Transaction Date  @*@Localizer["TransactionDateColumn"]*@
+                                </th>
+                                <th>
+                                    HDV  @*@Localizer["HDVColumn"]*@
+                                </th>
+                                <th>
+
+                                </th>
+
+                            </tr>
+                        </thead>
+
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script src="~/lib/DataTables/datatables.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+
+
+            var columns = [
+                { "data": "id", "orderable": false },
+                { "data": "vehicleMake", "orderable": false },
+                { "data": "vehicleModel", "orderable": false },
+                { "data": "yearOfManufacture", "orderable": false },
+                { "data": "chassisNo", "orderable": false },
+                { "data": "transactionDate", "orderable": false },
+                { "data": "hdv", "orderable": false }
+            ];
+
+
+
+
+            columns.push({
+                "data": "transactionId",
+                "orderable": false,
+                "sClass": "text-center",
+                "render": function (data, type, row) {
+                    return '<a  href="/DutyCalculator/CalculatedDutyResult/' + data + '"><i class="text-success fas fa-eye"></i> </a>';
+                }
+            });
+
+
+            $('#vehicleHistory').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "responsive": true,
+                "info": true,
+                "stateSave": true,
+                "lengthMenu":
+                    [
+                        [10, 20, 50, -1], [10, 20, 50, "All"]
+                    ],
+                "ajax": {
+                    "url":
+                        '/DutyCalculator/DutySearchHistory',
+                    "type": "POST",
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val()
+                    }
+                },
+                "fnRowCallback": function (nRow, aData, iDisplayIndex) {
+                    $("td:first", nRow).html(iDisplayIndex + 1 + this.api().page.info().start);
+
+                    return nRow;
+                },
+                "columns": columns,
+                "order": [[1, "asc"]]
+            });
+        });
+
+    </script>
+}

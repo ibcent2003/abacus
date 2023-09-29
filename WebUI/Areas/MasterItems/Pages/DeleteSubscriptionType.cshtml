@@ -1,0 +1,63 @@
+﻿@page "{id}"
+@using Microsoft.Extensions.Localization
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Areas.MasterItems.Pages
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MasterItems.Pages.DeleteSubscriptionTypeModel
+@inject IStringLocalizer<DeleteSubscriptionTypeModel> Localizer
+@inject CommonLocalizationService LocalizationService
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListSubscriptionTypeModel",new {area="MasterItems"})">@LocalizationService.Get("ListSubscriptionTypeRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("DeleteSubscriptionTypeRes")</li>
+        </ol>
+    </nav>
+}
+
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title"><p class="text-danger">@Localizer["DeleteConfirmationMessage"]</p></h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="DeleteSubscriptionType" method="post">
+            <input type="hidden" asp-for="Command.Id" />
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.Name"> @Localizer["SubscriptionTypeNamelbl"] :</label>
+                    <input readonly="readonly" class="form-control" asp-for="Command.Name" />
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.Description"> @Localizer["SubscriptionTypeDescriptionlbl"] :</label>
+                    <input readonly="readonly" asp-for="Command.Description" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" asp-for="Command.IsActive" class="custom-control-input" />
+                    <label class="custom-control-label" asp-for="Command.IsActive"> @Localizer["IsActivelbl"]</label>
+                </div>
+                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Delete" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
+

@@ -1,0 +1,496 @@
+﻿@page
+@inject IStringLocalizer<TraderSubscriptionModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.Subscription.Pages.TraderSubscriptionModel
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+    Layout = "_LandingPageLayout";
+
+}
+
+@section Css
+{
+
+
+    <link href="~/lib/SmartWizard2/css/smart_wizard.css" rel="stylesheet" />
+    <link href="~/lib/SmartWizard2/css/smart_wizard_dots.css" rel="stylesheet" />
+    <link href="~/lib/PhoneNum/build/css/intlTelInput.css" rel="stylesheet" />
+    <link href="~/lib/CountryList/css/countrySelect.css" rel="stylesheet" />
+
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+<div class="card">
+    <div class="card-header">
+
+    </div>
+    <div class="card-body">
+        <div id="smartwizard">
+            <ul class="nav">
+                <li>
+                    <a class="nav-link" href="#step-1">
+                        @Localizer["OrganisationDetailsTab"]
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#step-2">
+                        @Localizer["AdminDetailsTab"]
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#step-3">
+                        @Localizer["DocumentDetailsTab"]
+                    </a>
+                </li>
+
+            </ul>
+            <br />
+            <form asp-page="TraderSubscription" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Command.ProcessCode" />
+                <div class="tab-content">
+                    <div id="step-1" class="tab-pane" role="tabpanel">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.EntityName"> @Localizer["OrganisationNamelbl"] :</label>
+                                <div class="col-md-6">
+                                    <input class="form-control form-control-lg" required asp-for="Command.EntityName" />
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_EntityNameError" asp-validation-for="Command.EntityName"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.Tin"> @Localizer["Tinlbl"] :</label>
+                                <div class="col-md-6">
+                                    <input asp-for="Command.Tin" required class="form-control form-control-lg" />
+
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_TinError" asp-validation-for="Command.Tin"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.CountryCode"> @Localizer["Countrylbl"] :</label>
+                                <div class="col-md-6">
+                                    <input id="country_selector" width="100%" class="form-control form-control-lg" type="text">
+                                    <input asp-for="Command.CountryCode" required type="hidden" id="country_selector_code" class="form-control form-control-lg" data-countrycodeinput="1" />
+
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="country_selector_codeError" asp-validation-for="Command.CountryCode"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.City"> @Localizer["Citylbl"] :</label>
+                                <div class="col-md-6">
+                                    <input asp-for="Command.City" required class="form-control form-control-lg" />
+
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_CityError" asp-validation-for="Command.City"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.StreetNumber"> @Localizer["StreetNumberlbl"] :</label>
+                                <div class="col-md-6">
+                                    <input asp-for="Command.StreetNumber" required class="form-control form-control-lg" />
+
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_StreetNumberError" asp-validation-for="Command.StreetNumber"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.PostCode"> @Localizer["PostCodelbl"] :</label>
+                                <div class="col-md-6">
+                                    <input asp-for="Command.PostCode" required class="form-control form-control-lg" />
+
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_PostCodeError" asp-validation-for="Command.PostCode"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.EmailAddress"> @Localizer["EmailAddresslbl"] :</label>
+                                <div class="col-md-6">
+                                    <input type="email" required asp-for="Command.EmailAddress" class="form-control form-control-lg" />
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" asp-validation-for="Command.EmailAddress"></span>
+                                    <span id="Command_EmailAddressError" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.PhoneNumber"> @Localizer["PhoneNumberlbl"] :</label>
+                                <div class="col-md-6">
+                                    <input type="tel" required asp-for="Command.PhoneNumber" class="form-control form-control-lg" />
+                                    <small class="form-text text-muted">e.g +2330245657789</small>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_PhoneNumberError" asp-validation-for="Command.PhoneNumber"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right" asp-for="Command.FaxNumber"> @Localizer["FaxNumberlbl"] :</label>
+                                <div class="col-md-6">
+                                    <input asp-for="Command.FaxNumber" class="form-control form-control-lg" />
+
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_FaxNumberError" asp-validation-for="Command.FaxNumber"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2 offset-md-7 text-right">
+                            <button onclick="WizardStep1()" type="button" class="btn btn-outline-primary btn-lg">Next <span class="fa fa-arrow-circle-right"></span></button>
+                        </div>
+                    </div>
+                    <div id="step-2" class="tab-pane" role="tabpanel">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.FirstName"> @Localizer["FirstNamelbl"] :</label>
+                                <div class="col-md-6">
+                                    <input required asp-for="Command.FirstName" class="form-control form-control-lg" />
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_FirstNameError" asp-validation-for="Command.FirstName"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right" asp-for="Command.MiddleName"> @Localizer["MiddleNamelbl"] :</label>
+                                <div class="col-md-6">
+                                    <input asp-for="Command.MiddleName" class="form-control form-control-lg" />
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_MiddleNameError" asp-validation-for="Command.MiddleName"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.LastName"> @Localizer["LastNamelbl"] :</label>
+                                <div class="col-md-6">
+                                    <input required asp-for="Command.LastName" class="form-control form-control-lg" />
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_LastNameError" asp-validation-for="Command.LastName"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.AdminEmailAddress"> @Localizer["AdminEmailAddresslbl"] :</label>
+                                <div class="col-md-6">
+                                    <input type="email" required asp-for="Command.AdminEmailAddress" class="form-control form-control-lg" />
+                                    <small class="form-text text-muted">This email address will be use to create the admin account which will be responsible for managing your subscription.</small>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_AdminEmailAddressError" asp-validation-for="Command.AdminEmailAddress"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.AdminPhoneNumber"> @Localizer["AdminPhoneNumberlbl"] :</label>
+                                <div class="col-md-6">
+                                    <input type="tel" required asp-for="Command.AdminPhoneNumber" class="form-control form-control-lg" />
+                                    <small class="form-text text-muted">e.g +2330245657789</small>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_AdminPhoneNumberError" asp-validation-for="Command.AdminPhoneNumber"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.Password"> @Localizer["Passwordlbl"] :</label>
+                                <div class="col-md-6">
+                                    <input type="password" required asp-for="Command.Password" class="form-control form-control-lg" />
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_PasswordError" asp-validation-for="Command.LastName"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-3 text-sm-right required" asp-for="Command.ConfirmPassword"> @Localizer["ConfirmPasswordlbl"] :</label>
+                                <div class="col-md-6">
+                                    <input type="password" required asp-for="Command.ConfirmPassword" class="form-control form-control-lg" />
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="text-danger" id="Command_ConfirmPasswordError" asp-validation-for="Command.ConfirmPassword"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 offset-md-5 text-right">
+                            <button onclick="previous()" type="button" class="btn btn-outline-danger btn-lg"><span class="fa fa-arrow-circle-left"></span> Previous</button>
+                            <button onclick="WizardStep2()" type="button" class="btn btn-outline-primary btn-lg">Next <span class="fa fa-arrow-circle-right"></span></button>
+                        </div>
+                    </div>
+                    <div id="step-3" class="tab-pane" role="tabpanel">
+                        <div class="col-md-12">
+                            @if (Model.Command.DocumentsUploaded.Any())
+                            {
+                                for (var i = 0; i < Model.Command.DocumentsUploaded.Count; i++)
+                                {
+                                    var formatStrings = Model.Command.DocumentsUploaded[i].FileExtension.Split(",");
+
+                                    var format = string.Join(",", formatStrings.Select(x => EnumHelper.GetEnumFromString<FileFormats>(x).GetFormat()));
+
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-sm-3 text-sm-right" asp-for="@Model.Command.DocumentsUploaded[i].FormFile">
+                                            @Model.Command.DocumentsUploaded[i].FileName
+                                            @if (Model.Command.DocumentsUploaded[i].Mandatory)
+                                            {
+                                                <span class="text-danger"> *</span>
+                                            }
+                                            :
+                                        </label>
+                                        <div class="col-md-6">
+                                            <div class="custom-file">
+                                                <input type="file" id="@Model.Command.DocumentsUploaded[i].RequiredDocumentId" required="@Model.Command.DocumentsUploaded[i].Mandatory" accept="@format" asp-for="@Model.Command.DocumentsUploaded[i].FormFile" class="form-control custom-file-input" />
+                                                <label class="custom-file-label">Choose File ...</label>
+                                                <input type="hidden" asp-for="@Model.Command.DocumentsUploaded[i].RequiredDocumentId" />
+                                                <input type="hidden" asp-for="@Model.Command.DocumentsUploaded[i].FileName" />
+                                                <input type="hidden" asp-for="@Model.Command.DocumentsUploaded[i].FileExtension" />
+                                            </div>
+                                            @if (Model.Command.DocumentsUploaded[i].Mandatory)
+                                            {
+                                                <span class="text-danger" asp-validation-for="@Model.Command.DocumentsUploaded[i].FormFile"></span>
+                                            }
+                                        </div>
+                                    </div>
+                                }
+                            }
+                            else
+                            {
+                                <span>@Localizer["NoSupportingDocumentRequired"]</span>
+                            }
+
+                        </div>
+                        <div class="col-md-6 offset-md-3 text-right">
+                            <button onclick="previous()" type="button" class="btn btn-outline-danger btn-lg"><span class="fa fa-arrow-circle-left"></span> Previous</button>
+                            <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.WizardFinishStep" />
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+@section Scripts{
+
+    <script src="~/lib/SmartWizard2/js/jquery.smartWizard.js"></script>
+    <script src="~/lib/PhoneNum/build/js/intlTelInput.js"></script>
+    <script src="~/lib/CountryList/js/countrySelect.js"></script>
+
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+
+
+        var isValid = true;
+
+        function validateStep(item) {
+            if (!item.checkValidity()) {
+                document.getElementById(item.id + "Error").innerText = item.validationMessage;
+                isValid = false;
+            }
+        }
+
+        var password = document.getElementById("Command_Password"), confirm_password = document.getElementById("Command_ConfirmPassword");
+
+        function validatePassword() {
+            if (password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Passwords Don't Match");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+
+        var WizardStep1 = function () {
+            isValid = true;
+            var inpObj = document.getElementById("Command_EntityName");
+            var tinObj = document.getElementById("Command_Tin");
+            var countryCodeObj = document.getElementById("country_selector_code");
+            var cityObj = document.getElementById("Command_City");
+            var streetNumberObj = document.getElementById("Command_StreetNumber");
+            var postCodeObj = document.getElementById("Command_PostCode");
+            var orgEmailObj = document.getElementById("Command_EmailAddress");
+            var orgPhoneObj = document.getElementById("Command_PhoneNumber");
+            var faxNumberObj = document.getElementById("Command_FaxNumber");
+            var step1 = [inpObj, tinObj, cityObj, streetNumberObj, postCodeObj, orgEmailObj, orgPhoneObj, faxNumberObj];
+            step1.forEach(validateStep);
+
+            var orgEmail = $("#Command_EmailAddress").val();
+
+            if (orgEmailObj.checkValidity()) {
+                document.getElementById("Command_EmailAddressError").innerText = "Validating Email Address...";
+
+                validate('/Subscription/ValidateOrgEmail', orgEmail, "Command_EmailAddressError").then(
+                    function (result) {
+                        document.getElementById("Command_EmailAddressError").innerText = result.message;
+
+                        if (result.isExist == false && isValid == true) $('#smartwizard').smartWizard('next');
+                    });
+            }
+        };
+
+        var previous = function () {
+            isValid = true;
+
+            $('#smartwizard').smartWizard('prev');
+        };
+
+        var WizardStep2 = function () {
+            isValid = true;
+            var adminEmailAddressObj = document.getElementById("Command_AdminEmailAddress");
+            var adminPhoneNumberObj = document.getElementById("Command_AdminPhoneNumber");
+            var firstNameObj = document.getElementById("Command_FirstName");
+            var middleNameObj = document.getElementById("Command_MiddleName");
+            var lastNameObj = document.getElementById("Command_LastName");
+            var passwordObj = document.getElementById("Command_Password");
+            var confirmPasswordObj = document.getElementById("Command_ConfirmPassword");
+
+            var step2 = [adminEmailAddressObj, adminPhoneNumberObj, firstNameObj, middleNameObj, lastNameObj, passwordObj, confirmPasswordObj];
+
+            step2.forEach(validateStep);
+
+            var orgEmail = $("#Command_AdminEmailAddress").val();
+
+            if (adminEmailAddressObj.checkValidity()) {
+                document.getElementById("Command_AdminEmailAddressError").innerText = "Validating Email Address...";
+
+                validate('/Subscription/ValidateAdminEmail', orgEmail, "Command_AdminEmailAddressError").then(
+                    function (result) {
+                        document.getElementById("Command_AdminEmailAddressError").innerText = result.message;
+
+                        if (result.isExist == false && isValid == true) $('#smartwizard').smartWizard('next');
+                    });
+            }
+        };
+
+        var validate = function (url, textToValidate, errorDisplay) {
+            return $.ajax({
+                url: url,
+                data: {
+                    valueToValidate: textToValidate
+                }
+            });
+        };
+
+
+        $(document).ready(function () {
+            $('.custom-file-input').on("change",
+                function () {
+                    var fileName = $(this).val().split("\\").pop();
+                    $(this).next('.custom-file-label').html(fileName);
+                });
+
+            $('#smartwizard').smartWizard({
+
+                // Initial selected step, 0 = first step
+                selected: 0,
+
+                // Theme
+                theme: 'dots',
+
+                // Nav menu justification. true/false
+                justified: true,
+
+                // Automatically adjust content height
+                autoAdjustHeight: true,
+
+                // Allow to cycle the navigation of steps
+                cycleSteps: true,
+
+                // Enable the back button support
+                backButtonSupport: true,
+
+                // Enable selection of the step based on url hash
+                useURLhash: false,
+
+                // Show url hash based on step
+                enableURLhash: true,
+
+                // Config transitions
+                transition: {
+
+                    // none/fade/slide-horizontal/slide-vertical/slide-swing
+                    animation: 'none',
+
+                    // transition speed
+                    speed: '400',
+
+                    // easing function
+                    easing: ''
+
+                },
+
+                // Enable keyboard navigation
+                keyboardSettings: {
+                    key: false
+                    //keyLeft: [37],
+                    //keyRight: [39]
+                },
+
+                // Language variables
+                lang: {
+                    next: 'Next',
+                    previous: 'Previous'
+                },
+
+                // step bar options
+                toolbarSettings: {
+                    toolbarPosition: 'bottom', // none, top, bottom, both
+                    toolbarButtonPosition: 'right', // left, right
+                    showNextButton: false, // show/hide a Next button
+                    showPreviousButton: false, // show/hide a Previous button
+                    toolbarExtraButtons: []
+                },
+
+                // anchor options
+                anchorSettings: {
+                    anchorClickable: true, // Enable/Disable anchor navigation
+                    enableAllAnchors: false, // Activates all anchors clickable all times
+                    markDoneStep: true, // add done css
+                    markAllPreviousStepsAsDone:
+                        true, // When a step selected by url hash, all previous steps are marked done
+                    removeDoneStepOnNavigateBack:
+                        false, // While navigate back done step after active step will be cleared
+                    enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+                },
+
+                // Array of disabled Steps
+                disabledSteps: [],
+
+                // Highlight step with errors
+                errorSteps: [],
+
+                // Hidden steps
+                hiddenSteps: []
+
+            });
+
+            var input = document.querySelector("#Command_PhoneNumber");
+            var input2 = document.querySelector("#Command_AdminPhoneNumber");
+
+            window.intlTelInput(input, { autoHideDialCode: true, formatOnDisplay: true, nationalMode: false });
+            window.intlTelInput(input2, { autoHideDialCode: true, formatOnDisplay: true, nationalMode: false });
+
+            $("#country_selector").countrySelect({
+                responsiveDropdown: true
+
+            });
+        });
+
+    </script>
+}

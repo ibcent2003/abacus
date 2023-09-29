@@ -1,0 +1,147 @@
+2020-09-30T12:07:29.7092656+00:00 0HM3575HA4KO2:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (3172 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T12:07:51.0507765+00:00 0HM3575HA4KO2:00000049 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (664 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T12:49:46.2072638+00:00 0HM3575HA4KO4:00000047 [ERR] Failed executing DbCommand ("69"ms) [Parameters=["@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (DbType = DateTime2), @p3='?' (Size = 50), @p4='?' (DbType = Int32), @p5='?' (Size = 20), @p6='?' (Size = 4000), @p7='?' (Size = 10), @p8='?' (Size = 10), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?' (DbType = Int32), @p13='?' (Size = 50), @p14='?' (DbType = Int32), @p15='?' (Size = 10), @p16='?' (Size = 50), @p17='?' (DbType = Guid), @p18='?' (DbType = DateTime2), @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [VehicleSearchPools] ([AssessedHSCode], [CalculatedBy], [CalculatedDate], [ChassisNo], [CountryId], [CurrencyName], [DutyResult], [EngineCapacity], [FuelType], [HDV], [MakeName], [ModelName], [NoOfDoor], [OwnedBy], [SeatingCapacity], [SpecialFeatureName], [Status], [TransactionId], [TransactonDate], [UserId], [VehicleTypeName], [Year])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);
+SELECT [Id]
+FROM [VehicleSearchPools]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (627a98df)
+2020-09-30T12:49:46.7229681+00:00 0HM3575HA4KO4:00000047 [ERR] An exception occurred in the database while saving changes for context type '"Wbc.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'VehicleTypeName', table 'ABACUS_DEMO.dbo.VehicleSearchPools'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:424eb092-3f6f-46fd-9b15-1e993124775f
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'VehicleTypeName', table 'ABACUS_DEMO.dbo.VehicleSearchPools'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:424eb092-3f6f-46fd-9b15-1e993124775f
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Wbc.Application.DutyCalculator.Command.CreateVehiclePoolCommandHandler.Handle(CreateVehiclePoolCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\DutyCalculator\Command\CreateVehiclePoolCommand.cs:line 64
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+2020-09-30T12:49:47.5872667+00:00 0HM3575HA4KO4:00000047 [ERR] Wbc.Cube Request: Unhandled Exception for Request "CreateVehiclePoolCommand" CreateVehiclePoolCommand { Id: 0, MakeId: 16, ModelId: 324, VehicleTypeName: null, SpecialFeatureName: "LE", SeatingCapacity: 5, EngineCapacity: "1800", FuelType: "Petrol", Year: 2015, CurrencyId: 111, CountryId: 1 } (47efab21)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'VehicleTypeName', table 'ABACUS_DEMO.dbo.VehicleSearchPools'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:424eb092-3f6f-46fd-9b15-1e993124775f
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Wbc.Application.DutyCalculator.Command.CreateVehiclePoolCommandHandler.Handle(CreateVehiclePoolCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\DutyCalculator\Command\CreateVehiclePoolCommand.cs:line 64
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+2020-09-30T12:49:48.4751613+00:00 0HM3575HA4KO4:00000047 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'VehicleTypeName', table 'ABACUS_DEMO.dbo.VehicleSearchPools'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:424eb092-3f6f-46fd-9b15-1e993124775f
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Wbc.Application.DutyCalculator.Command.CreateVehiclePoolCommandHandler.Handle(CreateVehiclePoolCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\DutyCalculator\Command\CreateVehiclePoolCommand.cs:line 64
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+   at Wbc.Application.Common.Behaviours.RequestPerformanceBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\RequestPerformanceBehaviour.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Wbc.WebUI.Areas.DutyCalculator.Pages.SearchByMakeModel.OnPost() in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Areas\DutyCalculator\Pages\SearchByMake.cshtml.cs:line 115
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-30T15:35:37.9138446+00:00 0HM35APM47QFU:00000041 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (593 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T16:11:10.1203702+00:00 0HM35BDHE406A:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (807 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T20:14:44.6439564+00:00 0HM35FL7RSMDJ:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (3142 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T20:15:19.2481080+00:00 0HM35FL7RSMDJ:00000061 [WRN] Wbc.Cube Long Running Request: "GetUserHScodePoolQuery" (679 milliseconds) "b6c506ed-3286-463c-b943-720b27552adb" "(null)" GetUserHScodePoolQuery { TransactionId: 0e4e57eb-2d39-464e-a1a5-79e387767d78 } (6c601218)
+2020-09-30T20:21:15.1427643+00:00 0HM35FP9CUHC0:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2704 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T20:21:52.1597215+00:00 0HM35FP9CUHC0:0000005B [WRN] Wbc.Cube Long Running Request: "GetUserHScodePoolQuery" (749 milliseconds) "b6c506ed-3286-463c-b943-720b27552adb" "(null)" GetUserHScodePoolQuery { TransactionId: 0e4e57eb-2d39-464e-a1a5-79e387767d78 } (6c601218)
+2020-09-30T21:02:08.7753135+00:00 0HM35GF2KVDAS:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2228 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T21:28:37.4682484+00:00 0HM35GUMBOBCE:00000037 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2347 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T21:28:55.1831253+00:00 0HM35GUMBOBCE:00000043 [WRN] Wbc.Cube Long Running Request: "GetUserHScodePoolQuery" (596 milliseconds) "b6c506ed-3286-463c-b943-720b27552adb" "(null)" GetUserHScodePoolQuery { TransactionId: 0e4e57eb-2d39-464e-a1a5-79e387767d78 } (6c601218)
+2020-09-30T21:35:56.4709575+00:00 0HM35H2QKON5G:0000005F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2723 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T22:11:47.6263190+00:00 0HM35HN08JOAT:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2960 milliseconds) "" "" GetUserPermissionsQuery { UserId: "b6c506ed-3286-463c-b943-720b27552adb" } (6c601218)
+2020-09-30T22:12:10.3316987+00:00 0HM35HN08JOAT:00000059 [WRN] Wbc.Cube Long Running Request: "GetUserHScodePoolQuery" (557 milliseconds) "b6c506ed-3286-463c-b943-720b27552adb" "(null)" GetUserHScodePoolQuery { TransactionId: 0e4e57eb-2d39-464e-a1a5-79e387767d78 } (6c601218)

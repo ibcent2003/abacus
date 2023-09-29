@@ -1,0 +1,199 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.Permission.Pages.OrganisationalUsersModel
+@inject IStringLocalizer<OrganisationalUsersModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+
+@{
+    <link href="~/lib/DataTables/datatables.css" rel="stylesheet" />
+}
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+
+    var canAdd = await AuthorizationService.AuthorizeAsync(User, Policies.CanAddOrganisationalUser.GetAttributeStringValue());
+
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("ListUsersRes")</li>
+        </ol>
+    </nav>
+}
+
+@Html.AntiForgeryToken()
+
+<div class="card">
+    <div class="card-header">
+        &nbsp;
+        &nbsp;
+        @if (canAdd.Succeeded)
+            {
+                <a  href="/permission/addorganisationaluser" class="btn btn-outline-primary btn-lg"><span class="fa fa-plus"></span> Add New</a>
+            }
+    </div>
+    <div class="card-body">
+        <div class="table table-responsive">
+            <table id="users" class="table table-striped table-condensed" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th>
+                            S/N
+                        </th>
+                        <th>
+                            @Localizer["UserNameColumn"]
+                        </th>
+                        <th>
+                            @Localizer["EmailColumn"]
+                        </th>
+                        <th>@Localizer["PhoneNumberColumn"]</th>
+                        <th>
+                            @Localizer["EmailConfirmedColumn"]
+                        </th>
+                        <th>@Localizer["PhoneNumberConfirmedColumn"]</th>
+                        <th>@Localizer["LockOutColumn"]</th>
+                        <th>@Localizer["2FAColumn"]</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script src="~/lib/DataTables/datatables.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            var detailsBtnlbl = '@LocalizationService.Get("DataTableDetailsBtnlbl")';
+            var confirmed = '@LocalizationService.Get("Confirmedlbl")';
+            var notConfirmed = '@LocalizationService.Get("NotConfirmedlbl")';
+            var locked = '@LocalizationService.Get("Lockedlbl")';
+            var notLocked = '@LocalizationService.Get("NotLockedlbl")';
+            var enabled = '@LocalizationService.Get("Enabledlbl")';
+            var notEnabled = '@LocalizationService.Get("NotEnabledlbl")';
+
+            var columns = [
+                { "data": "id", "orderable": false }, { "data": "userName", "orderable": false },
+                { "data": "email", "orderable": false },
+                { "data": "phoneNumber", "orderable": false },
+                {
+                    "data": "emailConfirmed", "orderable": false, "sClass": "text-left",
+                    "render": function(data, type, row)
+                    {
+
+                        if (data)
+                        {
+                            return '<span class="text-success fa-1x fa fa-check-circle"> ' + confirmed + '</span>';
+
+                        } else
+                        {
+                            return '<span class="text-danger fa-1x fa fa-times-circle"> ' + notConfirmed + '</span>';
+                        }
+                    }
+                },
+                {
+                    "data": "phoneNumberConfirmed", "orderable": false, "sClass": "text-left",
+
+                    "render": function (data, type, row) {
+
+                        if (data)
+                        {
+                            return '<span class="text-success fa-1x fa fa-check-circle"> ' + confirmed + '</span>';
+
+                        } else
+                        {
+                            return '<span class="text-danger fa-1x fa fa-times-circle"> ' + notConfirmed + '</span>';
+                        }
+                    }
+                },
+                {
+                    "data": "lockOutEnabled", "orderable": false, "sClass": "text-center",
+                    "render": function (data, type, row) {
+
+                        if (data) {
+                            return '<span class="text-success fa-1x fa fa-check-circle"> ' + notLocked + '</span>';
+
+                        } else {
+                            return '<span class="text-danger fa-1x fa fa-times-circle"> ' + locked + '</span>';
+                        }
+                    }
+                },
+                {
+                    "data": "twoFactorEnabled", "orderable": false, "sClass": "text-center",
+                    "render": function (data, type, row) {
+
+                        if (data) {
+
+                            return '<span class="text-success fa-1x fa fa-check-circle"> ' + enabled + '</span>';
+
+                        } else {
+
+                            return '<span class="text-danger fa-1x fa fa-times-circle"> ' + notEnabled + '</span>';
+                        }
+                    }
+                },
+                {
+                    "data": "id",
+                    "orderable": false,
+                    "sClass": "text-center",
+                    "render": function (data, type, row) {
+
+                        return '<a  href="/Permission/UserProfile/' + data + '"><i class="fas fa-folder"></i> ' + detailsBtnlbl + ' </a>';
+                    }
+                }
+            ];
+
+            $('#users').DataTable({
+                "processing": true,
+                "serverSide": true,
+                responsive: true,
+                "info": true,
+                "stateSave": true,
+                "lengthMenu":
+                [
+                    [10, 20, 50, -1], [10, 20, 50, "All"]
+                ],
+                "ajax": {
+                    "url":
+                        '/Permission/OrganisationalUsers',
+                    "type": "POST",
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val()
+                    }
+                },
+                "fnRowCallback": function(nRow, aData, iDisplayIndex)
+                {
+                    $("td:first", nRow).html(iDisplayIndex + 1 + this.api().page.info().start);
+
+                    return nRow;
+                },
+                "columns": columns,
+                "order": [[1, "asc"]]
+            });
+        });
+
+    </script>
+}

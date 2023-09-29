@@ -1,0 +1,643 @@
+2020-09-03T10:54:58.4861895+00:00 0HM2FUQC5658O:00000033 [WRN] Wbc.Cube Long Running Request: "CreateGeneralGoodsSearchCommand" (93107 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" CreateGeneralGoodsSearchCommand { HsCode: "0101.21.00.00", FOB: 2000, Freight: 100, Insurance: 400, CurrencyId: 111, CountryId: 1 } (6c601218)
+2020-09-03T11:54:21.1528332+00:00  [WRN] Unable to bind to "https://localhost:5001" on the "IPv4 loopback" interface: '"An attempt was made to access a socket in a way forbidden by its access permissions."'. (38217649)
+2020-09-03T11:54:33.9041937+00:00 0HM2G00C8OBG5:00000055 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (612 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T11:54:33.9042055+00:00 0HM2G00C8OBG5:00000051 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (621 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T11:54:33.9042053+00:00 0HM2G00C8OBG5:0000004B [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (665 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T11:57:36.1019655+00:00  [WRN] Unable to bind to "https://localhost:5001" on the "IPv4 loopback" interface: '"An attempt was made to access a socket in a way forbidden by its access permissions."'. (38217649)
+2020-09-03T12:38:49.0374989+00:00 0HM2G0NQE2442:00000065 [ERR] Wbc.Cube Request: Unhandled Exception for Request "CreateGeneralGoodsSearchCommand" CreateGeneralGoodsSearchCommand { HsCode: "0101.21.00.00", FOB: 2000, Freight: 100, Insurance: 400, CurrencyId: 111, CountryId: 1 } (47efab21)
+System.ApplicationException: An exception was thrown while attempting to evaluate a LINQ query parameter expression. To show additional information call EnableSensitiveDataLogging() when overriding DbContext.OnConfiguring.
+   at Wbc.Application.GeneralGoods.Command.CreateGeneralGoodsSearch.CreateGeneralGoodsSearchCommandHandler.Handle(CreateGeneralGoodsSearchCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\GeneralGoods\Command\CreateGeneralGoodsSearch\CreateGeneralGoodsSearchCommand.cs:line 121
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+   at Wbc.Application.Common.Behaviours.RequestPerformanceBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\RequestPerformanceBehaviour.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Wbc.WebUI.Areas.GeneralGoods.Pages.GeneralGoodsDutyModel.OnPost() in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Areas\GeneralGoods\Pages\GeneralGoodsDuty.cshtml.cs:line 53
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-03T12:38:49.2805796+00:00 0HM2G0NQE2442:00000065 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ApplicationException: An exception was thrown while attempting to evaluate a LINQ query parameter expression. To show additional information call EnableSensitiveDataLogging() when overriding DbContext.OnConfiguring.
+   at Wbc.Application.GeneralGoods.Command.CreateGeneralGoodsSearch.CreateGeneralGoodsSearchCommandHandler.Handle(CreateGeneralGoodsSearchCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\GeneralGoods\Command\CreateGeneralGoodsSearch\CreateGeneralGoodsSearchCommand.cs:line 121
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+   at Wbc.Application.Common.Behaviours.RequestPerformanceBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\RequestPerformanceBehaviour.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Wbc.WebUI.Areas.GeneralGoods.Pages.GeneralGoodsDutyModel.OnPost() in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Areas\GeneralGoods\Pages\GeneralGoodsDuty.cshtml.cs:line 53
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-03T14:12:11.8959741+00:00 0HM2G2D9CIVDB:00000047 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (514 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:26:36.4203570+00:00 0HM2GC32T7IDO:00000029 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleChallengeAsyncInternal(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-03T23:27:28.9122212+00:00 0HM2GC32T7IDO:0000002F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2916 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:27:29.9351103+00:00 0HM2GC32T7IDO:0000002F [WRN] Wbc.Cube Long Running Request: "GetMenuResourceQuery" (619 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" GetMenuResourceQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:28:31.0433523+00:00 0HM2GC32T7IDO:00000049 [ERR] An exception occurred in the database while saving changes for context type '"Wbc.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_UserTariffs_hSCodeTariffTaxes_HSCodeTariffTaxId\". The conflict occurred in database \"ABACUS_DEV\", table \"dbo.hSCodeTariffTaxes\", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreResults(Boolean& moreResults)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryNextResult(Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.<>c__DisplayClass192_0.<NextResultAsync>b__1(Task t)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:d4230365-e73f-4342-bfe4-151bc83ff3b5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserTariffs_hSCodeTariffTaxes_HSCodeTariffTaxId". The conflict occurred in database "ABACUS_DEV", table "dbo.hSCodeTariffTaxes", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreResults(Boolean& moreResults)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryNextResult(Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.<>c__DisplayClass192_0.<NextResultAsync>b__1(Task t)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:d4230365-e73f-4342-bfe4-151bc83ff3b5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Wbc.Infrastructure.Services.GeneralGoodsService.GeneralGoodsCalculationGhana(Int32 Id, String hsCode, Decimal Fob, Decimal freight, Decimal insurance, Int32 currencyId, Int32 countryId, String StandardUnitOfQuantity, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Infrastructure\Services\GeneralGoodsService.cs:line 192
+2020-09-03T23:28:32.4355338+00:00 0HM2GC32T7IDO:00000049 [ERR] Wbc.Cube Request: Unhandled Exception for Request "CreateGeneralGoodsSearchCommand" CreateGeneralGoodsSearchCommand { HsCode: "0101.21.00.00", FOB: 2000, Freight: 100, Insurance: 300, CurrencyId: 111, CountryId: 1 } (47efab21)
+System.ApplicationException: An error occurred while updating the entries. See the inner exception for details.
+   at Wbc.Application.GeneralGoods.Command.CreateGeneralGoodsSearch.CreateGeneralGoodsSearchCommandHandler.Handle(CreateGeneralGoodsSearchCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\GeneralGoods\Command\CreateGeneralGoodsSearch\CreateGeneralGoodsSearchCommand.cs:line 121
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+   at Wbc.Application.Common.Behaviours.RequestPerformanceBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\RequestPerformanceBehaviour.cs:line 31
+2020-09-03T23:28:33.0265423+00:00 0HM2GC32T7IDO:00000049 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ApplicationException: An error occurred while updating the entries. See the inner exception for details.
+   at Wbc.Application.GeneralGoods.Command.CreateGeneralGoodsSearch.CreateGeneralGoodsSearchCommandHandler.Handle(CreateGeneralGoodsSearchCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\GeneralGoods\Command\CreateGeneralGoodsSearch\CreateGeneralGoodsSearchCommand.cs:line 121
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+   at Wbc.Application.Common.Behaviours.RequestPerformanceBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\RequestPerformanceBehaviour.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Wbc.WebUI.Areas.GeneralGoods.Pages.GeneralGoodsDutyModel.OnPost() in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Areas\GeneralGoods\Pages\GeneralGoodsDuty.cshtml.cs:line 53
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-03T23:31:42.1753459+00:00 0HM2GC5PIM2JL:00000047 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1908 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:31:43.0992996+00:00 0HM2GC5PIM2JL:00000047 [WRN] Wbc.Cube Long Running Request: "GetMenuResourceQuery" (603 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" GetMenuResourceQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:31:44.1880855+00:00 0HM2GC5PIM2JL:00000049 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (598 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:31:44.4349980+00:00 0HM2GC5PIM2JL:00000053 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (840 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:31:44.4352376+00:00 0HM2GC5PIM2JL:00000051 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (841 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:31:44.5014041+00:00 0HM2GC5PIM2JL:00000055 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (682 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:32:23.1241422+00:00 0HM2GC5PIM2JL:00000063 [ERR] Failed executing DbCommand ("51"ms) [Parameters=["@p0='?' (Size = 100), @p1='?' (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32), @p4='?' (Size = 100), @p5='?' (DbType = Decimal), @p6='?' (DbType = Guid), @p7='?' (DbType = Int32), @p8='?' (Size = 100), @p9='?' (DbType = Decimal), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Size = 100), @p13='?' (DbType = Decimal), @p14='?' (DbType = Guid), @p15='?' (DbType = Int32), @p16='?' (Size = 100), @p17='?' (DbType = Decimal), @p18='?' (DbType = Guid), @p19='?' (DbType = Int32), @p20='?' (Size = 100), @p21='?' (DbType = Decimal), @p22='?' (DbType = Guid), @p23='?' (DbType = Int32), @p24='?' (Size = 100), @p25='?' (DbType = Decimal), @p26='?' (DbType = Guid), @p27='?' (DbType = Int32), @p28='?' (DbType = Int32), @p29='?' (DbType = Int32), @p30='?' (DbType = Boolean), @p31='?' (DbType = Decimal), @p32='?' (DbType = Guid), @p33='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [UserTariffExtraTaxes] USING (
+VALUES (@p0, @p1, @p2, @p3, 0),
+(@p4, @p5, @p6, @p7, 1),
+(@p8, @p9, @p10, @p11, 2),
+(@p12, @p13, @p14, @p15, 3),
+(@p16, @p17, @p18, @p19, 4),
+(@p20, @p21, @p22, @p23, 5),
+(@p24, @p25, @p26, @p27, 6)) AS i ([TaxName], [TaxValue], [TransactionId], [UserHSCodePoolId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([TaxName], [TaxValue], [TransactionId], [UserHSCodePoolId])
+VALUES (i.[TaxName], i.[TaxValue], i.[TransactionId], i.[UserHSCodePoolId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [UserTariffExtraTaxes] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+
+INSERT INTO [UserTariffs] ([HSCodeTariffTaxId], [HsCodePoolId], [IsRate], [TariffValue], [TransactionId], [UserId])
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33);
+SELECT [Id]
+FROM [UserTariffs]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (627a98df)
+2020-09-03T23:32:23.2746989+00:00 0HM2GC5PIM2JL:00000063 [ERR] An exception occurred in the database while saving changes for context type '"Wbc.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint \"FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId\". The conflict occurred in database \"ABACUS_DEV\", table \"dbo.UserHSCodePools\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:eb9b5ba2-a597-4299-a1b3-14d8a56b20bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId". The conflict occurred in database "ABACUS_DEV", table "dbo.UserHSCodePools", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:eb9b5ba2-a597-4299-a1b3-14d8a56b20bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Wbc.Infrastructure.Services.GeneralGoodsService.GeneralGoodsCalculationGhana(Int32 Id, String hsCode, Decimal Fob, Decimal freight, Decimal insurance, Int32 currencyId, Int32 countryId, String StandardUnitOfQuantity, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Infrastructure\Services\GeneralGoodsService.cs:line 192
+2020-09-03T23:32:25.0228927+00:00 0HM2GC5PIM2JL:00000063 [ERR] Wbc.Cube Request: Unhandled Exception for Request "CreateGeneralGoodsSearchCommand" CreateGeneralGoodsSearchCommand { HsCode: "0101.21.00.00", FOB: 2000, Freight: 100, Insurance: 400, CurrencyId: 111, CountryId: 1 } (47efab21)
+System.ApplicationException: An error occurred while updating the entries. See the inner exception for details.
+   at Wbc.Application.GeneralGoods.Command.CreateGeneralGoodsSearch.CreateGeneralGoodsSearchCommandHandler.Handle(CreateGeneralGoodsSearchCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\GeneralGoods\Command\CreateGeneralGoodsSearch\CreateGeneralGoodsSearchCommand.cs:line 121
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+2020-09-03T23:32:26.3265493+00:00 0HM2GC5PIM2JL:00000063 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ApplicationException: An error occurred while updating the entries. See the inner exception for details.
+   at Wbc.Application.GeneralGoods.Command.CreateGeneralGoodsSearch.CreateGeneralGoodsSearchCommandHandler.Handle(CreateGeneralGoodsSearchCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\GeneralGoods\Command\CreateGeneralGoodsSearch\CreateGeneralGoodsSearchCommand.cs:line 121
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+   at Wbc.Application.Common.Behaviours.RequestPerformanceBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\RequestPerformanceBehaviour.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Wbc.WebUI.Areas.GeneralGoods.Pages.GeneralGoodsDutyModel.OnPost() in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Areas\GeneralGoods\Pages\GeneralGoodsDuty.cshtml.cs:line 53
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-03T23:36:09.5695292+00:00 0HM2GC5PIM2JL:00000077 [ERR] Failed executing DbCommand ("494"ms) [Parameters=["@p0='?' (Size = 100), @p1='?' (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32), @p4='?' (Size = 100), @p5='?' (DbType = Decimal), @p6='?' (DbType = Guid), @p7='?' (DbType = Int32), @p8='?' (Size = 100), @p9='?' (DbType = Decimal), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Size = 100), @p13='?' (DbType = Decimal), @p14='?' (DbType = Guid), @p15='?' (DbType = Int32), @p16='?' (Size = 100), @p17='?' (DbType = Decimal), @p18='?' (DbType = Guid), @p19='?' (DbType = Int32), @p20='?' (Size = 100), @p21='?' (DbType = Decimal), @p22='?' (DbType = Guid), @p23='?' (DbType = Int32), @p24='?' (Size = 100), @p25='?' (DbType = Decimal), @p26='?' (DbType = Guid), @p27='?' (DbType = Int32), @p28='?' (DbType = Int32), @p29='?' (DbType = Int32), @p30='?' (DbType = Boolean), @p31='?' (DbType = Decimal), @p32='?' (DbType = Guid), @p33='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [UserTariffExtraTaxes] USING (
+VALUES (@p0, @p1, @p2, @p3, 0),
+(@p4, @p5, @p6, @p7, 1),
+(@p8, @p9, @p10, @p11, 2),
+(@p12, @p13, @p14, @p15, 3),
+(@p16, @p17, @p18, @p19, 4),
+(@p20, @p21, @p22, @p23, 5),
+(@p24, @p25, @p26, @p27, 6)) AS i ([TaxName], [TaxValue], [TransactionId], [UserHSCodePoolId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([TaxName], [TaxValue], [TransactionId], [UserHSCodePoolId])
+VALUES (i.[TaxName], i.[TaxValue], i.[TransactionId], i.[UserHSCodePoolId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [UserTariffExtraTaxes] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+
+INSERT INTO [UserTariffs] ([HSCodeTariffTaxId], [HsCodePoolId], [IsRate], [TariffValue], [TransactionId], [UserId])
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33);
+SELECT [Id]
+FROM [UserTariffs]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (627a98df)
+2020-09-03T23:36:09.6244671+00:00 0HM2GC5PIM2JL:00000077 [ERR] An exception occurred in the database while saving changes for context type '"Wbc.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint \"FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId\". The conflict occurred in database \"ABACUS_DEV\", table \"dbo.UserHSCodePools\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:eb9b5ba2-a597-4299-a1b3-14d8a56b20bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId". The conflict occurred in database "ABACUS_DEV", table "dbo.UserHSCodePools", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:eb9b5ba2-a597-4299-a1b3-14d8a56b20bf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-09-03T23:41:36.6258510+00:00 0HM2GCBCIPOU5:00000047 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2443 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:41:37.8096205+00:00 0HM2GCBCIPOU5:00000047 [WRN] Wbc.Cube Long Running Request: "GetMenuResourceQuery" (516 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" GetMenuResourceQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:41:39.0108096+00:00 0HM2GCBCIPOU5:00000055 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (742 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:41:39.0338484+00:00 0HM2GCBCIPOU5:00000053 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (765 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:41:39.0855531+00:00 0HM2GCBCIPOU5:00000049 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (764 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:41:39.1847362+00:00 0HM2GCBCIPOU5:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (916 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:43:37.4527212+00:00 0HM2GCBCIPOU5:00000065 [ERR] Failed executing DbCommand ("73"ms) [Parameters=["@p0='?' (Size = 100), @p1='?' (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32), @p4='?' (Size = 100), @p5='?' (DbType = Decimal), @p6='?' (DbType = Guid), @p7='?' (DbType = Int32), @p8='?' (Size = 100), @p9='?' (DbType = Decimal), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Size = 100), @p13='?' (DbType = Decimal), @p14='?' (DbType = Guid), @p15='?' (DbType = Int32), @p16='?' (Size = 100), @p17='?' (DbType = Decimal), @p18='?' (DbType = Guid), @p19='?' (DbType = Int32), @p20='?' (Size = 100), @p21='?' (DbType = Decimal), @p22='?' (DbType = Guid), @p23='?' (DbType = Int32), @p24='?' (Size = 100), @p25='?' (DbType = Decimal), @p26='?' (DbType = Guid), @p27='?' (DbType = Int32), @p28='?' (Size = 100), @p29='?' (DbType = Decimal), @p30='?' (DbType = Guid), @p31='?' (DbType = Int32), @p32='?' (Size = 100), @p33='?' (DbType = Decimal), @p34='?' (DbType = Guid), @p35='?' (DbType = Int32), @p36='?' (Size = 100), @p37='?' (DbType = Decimal), @p38='?' (DbType = Guid), @p39='?' (DbType = Int32), @p40='?' (Size = 100), @p41='?' (DbType = Decimal), @p42='?' (DbType = Guid), @p43='?' (DbType = Int32), @p44='?' (Size = 100), @p45='?' (DbType = Decimal), @p46='?' (DbType = Guid), @p47='?' (DbType = Int32), @p48='?' (Size = 100), @p49='?' (DbType = Decimal), @p50='?' (DbType = Guid), @p51='?' (DbType = Int32), @p52='?' (Size = 100), @p53='?' (DbType = Decimal), @p54='?' (DbType = Guid), @p55='?' (DbType = Int32), @p56='?' (Size = 100), @p57='?' (DbType = Decimal), @p58='?' (DbType = Guid), @p59='?' (DbType = Int32), @p60='?' (Size = 100), @p61='?' (DbType = Decimal), @p62='?' (DbType = Guid), @p63='?' (DbType = Int32), @p64='?' (Size = 100), @p65='?' (DbType = Decimal), @p66='?' (DbType = Guid), @p67='?' (DbType = Int32), @p68='?' (Size = 100), @p69='?' (DbType = Decimal), @p70='?' (DbType = Guid), @p71='?' (DbType = Int32), @p72='?' (Size = 100), @p73='?' (DbType = Decimal), @p74='?' (DbType = Guid), @p75='?' (DbType = Int32), @p76='?' (Size = 100), @p77='?' (DbType = Decimal), @p78='?' (DbType = Guid), @p79='?' (DbType = Int32), @p80='?' (Size = 100), @p81='?' (DbType = Decimal), @p82='?' (DbType = Guid), @p83='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [UserTariffExtraTaxes] USING (
+VALUES (@p0, @p1, @p2, @p3, 0),
+(@p4, @p5, @p6, @p7, 1),
+(@p8, @p9, @p10, @p11, 2),
+(@p12, @p13, @p14, @p15, 3),
+(@p16, @p17, @p18, @p19, 4),
+(@p20, @p21, @p22, @p23, 5),
+(@p24, @p25, @p26, @p27, 6),
+(@p28, @p29, @p30, @p31, 7),
+(@p32, @p33, @p34, @p35, 8),
+(@p36, @p37, @p38, @p39, 9),
+(@p40, @p41, @p42, @p43, 10),
+(@p44, @p45, @p46, @p47, 11),
+(@p48, @p49, @p50, @p51, 12),
+(@p52, @p53, @p54, @p55, 13),
+(@p56, @p57, @p58, @p59, 14),
+(@p60, @p61, @p62, @p63, 15),
+(@p64, @p65, @p66, @p67, 16),
+(@p68, @p69, @p70, @p71, 17),
+(@p72, @p73, @p74, @p75, 18),
+(@p76, @p77, @p78, @p79, 19),
+(@p80, @p81, @p82, @p83, 20)) AS i ([TaxName], [TaxValue], [TransactionId], [UserHSCodePoolId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([TaxName], [TaxValue], [TransactionId], [UserHSCodePoolId])
+VALUES (i.[TaxName], i.[TaxValue], i.[TransactionId], i.[UserHSCodePoolId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [UserTariffExtraTaxes] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (627a98df)
+2020-09-03T23:43:38.0177767+00:00 0HM2GCBCIPOU5:00000065 [ERR] An exception occurred in the database while saving changes for context type '"Wbc.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint \"FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId\". The conflict occurred in database \"ABACUS_DEV\", table \"dbo.UserHSCodePools\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:405d4175-bdb1-4b90-a16d-a3089c8d916c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId". The conflict occurred in database "ABACUS_DEV", table "dbo.UserHSCodePools", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:405d4175-bdb1-4b90-a16d-a3089c8d916c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Wbc.Infrastructure.Services.GeneralGoodsService.GeneralGoodsCalculationGhana(Int32 Id, String hsCode, Decimal Fob, Decimal freight, Decimal insurance, Int32 currencyId, Int32 countryId, String StandardUnitOfQuantity, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Infrastructure\Services\GeneralGoodsService.cs:line 409
+2020-09-03T23:43:39.6843711+00:00 0HM2GCBCIPOU5:00000065 [ERR] Wbc.Cube Request: Unhandled Exception for Request "CreateGeneralGoodsSearchCommand" CreateGeneralGoodsSearchCommand { HsCode: "0101.21.00.00", FOB: 2000, Freight: 100, Insurance: 400, CurrencyId: 111, CountryId: 1 } (47efab21)
+System.ApplicationException: An error occurred while updating the entries. See the inner exception for details.
+   at Wbc.Application.GeneralGoods.Command.CreateGeneralGoodsSearch.CreateGeneralGoodsSearchCommandHandler.Handle(CreateGeneralGoodsSearchCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\GeneralGoods\Command\CreateGeneralGoodsSearch\CreateGeneralGoodsSearchCommand.cs:line 121
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+2020-09-03T23:43:40.8847441+00:00 0HM2GCBCIPOU5:00000065 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ApplicationException: An error occurred while updating the entries. See the inner exception for details.
+   at Wbc.Application.GeneralGoods.Command.CreateGeneralGoodsSearch.CreateGeneralGoodsSearchCommandHandler.Handle(CreateGeneralGoodsSearchCommand request, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Application\GeneralGoods\Command\CreateGeneralGoodsSearch\CreateGeneralGoodsSearchCommand.cs:line 121
+   at Wbc.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 22
+   at Wbc.Application.Common.Behaviours.RequestPerformanceBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\ibrahim\Source\Repos\Abacus\Application\Common\Behaviours\RequestPerformanceBehaviour.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Wbc.WebUI.Areas.GeneralGoods.Pages.GeneralGoodsDutyModel.OnPost() in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Areas\GeneralGoods\Pages\GeneralGoodsDuty.cshtml.cs:line 53
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-03T23:48:49.2216644+00:00 0HM2GCBCIPOU5:00000077 [ERR] Failed executing DbCommand ("400"ms) [Parameters=["@p0='?' (Size = 100), @p1='?' (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32), @p4='?' (Size = 100), @p5='?' (DbType = Decimal), @p6='?' (DbType = Guid), @p7='?' (DbType = Int32), @p8='?' (Size = 100), @p9='?' (DbType = Decimal), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Size = 100), @p13='?' (DbType = Decimal), @p14='?' (DbType = Guid), @p15='?' (DbType = Int32), @p16='?' (Size = 100), @p17='?' (DbType = Decimal), @p18='?' (DbType = Guid), @p19='?' (DbType = Int32), @p20='?' (Size = 100), @p21='?' (DbType = Decimal), @p22='?' (DbType = Guid), @p23='?' (DbType = Int32), @p24='?' (Size = 100), @p25='?' (DbType = Decimal), @p26='?' (DbType = Guid), @p27='?' (DbType = Int32), @p28='?' (Size = 100), @p29='?' (DbType = Decimal), @p30='?' (DbType = Guid), @p31='?' (DbType = Int32), @p32='?' (Size = 100), @p33='?' (DbType = Decimal), @p34='?' (DbType = Guid), @p35='?' (DbType = Int32), @p36='?' (Size = 100), @p37='?' (DbType = Decimal), @p38='?' (DbType = Guid), @p39='?' (DbType = Int32), @p40='?' (Size = 100), @p41='?' (DbType = Decimal), @p42='?' (DbType = Guid), @p43='?' (DbType = Int32), @p44='?' (Size = 100), @p45='?' (DbType = Decimal), @p46='?' (DbType = Guid), @p47='?' (DbType = Int32), @p48='?' (Size = 100), @p49='?' (DbType = Decimal), @p50='?' (DbType = Guid), @p51='?' (DbType = Int32), @p52='?' (Size = 100), @p53='?' (DbType = Decimal), @p54='?' (DbType = Guid), @p55='?' (DbType = Int32), @p56='?' (Size = 100), @p57='?' (DbType = Decimal), @p58='?' (DbType = Guid), @p59='?' (DbType = Int32), @p60='?' (Size = 100), @p61='?' (DbType = Decimal), @p62='?' (DbType = Guid), @p63='?' (DbType = Int32), @p64='?' (Size = 100), @p65='?' (DbType = Decimal), @p66='?' (DbType = Guid), @p67='?' (DbType = Int32), @p68='?' (Size = 100), @p69='?' (DbType = Decimal), @p70='?' (DbType = Guid), @p71='?' (DbType = Int32), @p72='?' (Size = 100), @p73='?' (DbType = Decimal), @p74='?' (DbType = Guid), @p75='?' (DbType = Int32), @p76='?' (Size = 100), @p77='?' (DbType = Decimal), @p78='?' (DbType = Guid), @p79='?' (DbType = Int32), @p80='?' (Size = 100), @p81='?' (DbType = Decimal), @p82='?' (DbType = Guid), @p83='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [UserTariffExtraTaxes] USING (
+VALUES (@p0, @p1, @p2, @p3, 0),
+(@p4, @p5, @p6, @p7, 1),
+(@p8, @p9, @p10, @p11, 2),
+(@p12, @p13, @p14, @p15, 3),
+(@p16, @p17, @p18, @p19, 4),
+(@p20, @p21, @p22, @p23, 5),
+(@p24, @p25, @p26, @p27, 6),
+(@p28, @p29, @p30, @p31, 7),
+(@p32, @p33, @p34, @p35, 8),
+(@p36, @p37, @p38, @p39, 9),
+(@p40, @p41, @p42, @p43, 10),
+(@p44, @p45, @p46, @p47, 11),
+(@p48, @p49, @p50, @p51, 12),
+(@p52, @p53, @p54, @p55, 13),
+(@p56, @p57, @p58, @p59, 14),
+(@p60, @p61, @p62, @p63, 15),
+(@p64, @p65, @p66, @p67, 16),
+(@p68, @p69, @p70, @p71, 17),
+(@p72, @p73, @p74, @p75, 18),
+(@p76, @p77, @p78, @p79, 19),
+(@p80, @p81, @p82, @p83, 20)) AS i ([TaxName], [TaxValue], [TransactionId], [UserHSCodePoolId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([TaxName], [TaxValue], [TransactionId], [UserHSCodePoolId])
+VALUES (i.[TaxName], i.[TaxValue], i.[TransactionId], i.[UserHSCodePoolId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [UserTariffExtraTaxes] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (627a98df)
+2020-09-03T23:48:49.2715905+00:00 0HM2GCBCIPOU5:00000077 [ERR] An exception occurred in the database while saving changes for context type '"Wbc.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint \"FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId\". The conflict occurred in database \"ABACUS_DEV\", table \"dbo.UserHSCodePools\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:f01a0d85-c195-4061-b39f-2d5bcfb75939
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId". The conflict occurred in database "ABACUS_DEV", table "dbo.UserHSCodePools", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:f01a0d85-c195-4061-b39f-2d5bcfb75939
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Wbc.Infrastructure.Services.GeneralGoodsService.GeneralGoodsCalculationGhana(Int32 Id, String hsCode, Decimal Fob, Decimal freight, Decimal insurance, Int32 currencyId, Int32 countryId, String StandardUnitOfQuantity, CancellationToken cancellationToken) in C:\Users\ibrahim\Source\Repos\Abacus\Infrastructure\Services\GeneralGoodsService.cs:line 409
+2020-09-03T23:55:08.1936941+00:00 0HM2GCI4CI8KV:00000047 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2343 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:55:10.2390063+00:00 0HM2GCI4CI8KV:00000055 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (576 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:55:10.2394384+00:00 0HM2GCI4CI8KV:00000049 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (504 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:55:10.2393443+00:00 0HM2GCI4CI8KV:00000053 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (628 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-03T23:56:16.6574120+00:00 0HM2GCI4CI8KV:00000065 [ERR] Failed executing DbCommand ("442"ms) [Parameters=["@p0='?' (Size = 100), @p1='?' (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [UserTariffExtraTaxes] ([TaxName], [TaxValue], [TransactionId], [UserHSCodePoolId])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [UserTariffExtraTaxes]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (627a98df)
+2020-09-03T23:56:16.8015721+00:00 0HM2GCI4CI8KV:00000065 [ERR] An exception occurred in the database while saving changes for context type '"Wbc.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId\". The conflict occurred in database \"ABACUS_DEV\", table \"dbo.UserHSCodePools\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5043b14f-1363-4fb3-8fb9-9ce0e8a716b5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserTariffExtraTaxes_UserHSCodePools_UserHSCodePoolId". The conflict occurred in database "ABACUS_DEV", table "dbo.UserHSCodePools", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5043b14f-1363-4fb3-8fb9-9ce0e8a716b5
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)

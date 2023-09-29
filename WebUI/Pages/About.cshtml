@@ -1,0 +1,51 @@
+﻿@page
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IStringLocalizer<AboutModel> Localizer
+@inject IHtmlLocalizer<AboutModel> HtmlLocalizer
+@model Wbc.WebUI.Pages.AboutModel
+@{
+    ViewData["Title"] = Localizer["Title"];
+    Layout = "Shared/_LayoutLatest";
+    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+    var requestCulture = requestCultureFeature.RequestCulture;
+}
+
+<div class="section scene" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">
+                <div class="heading_s1">
+                    <span class="sub_heading">@Localizer["PageName"]</span>
+                    <h2>@Localizer["Title"]</h2>
+                </div>
+                <span class="highlight_text">@Localizer["Excerpt"]</span>
+                <p>@Localizer["Paragraph1"]</p>
+                <p>@Localizer["Paragraph2"]</p>
+            </div>
+            <div class="col-md-6 animation animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="0.3s" style="animation-delay: 0.3s; opacity: 1;">
+                <div class="single_img fb_style1 mt-4 mt-md-0">
+                    <img src="~/assets/images/about_img6.jpg" alt="about_img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape_wrap">
+        <div class="shape1 layer" data-depth="0.1" style="transform: translate3d(-4.53271px, -0.662919px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block;">
+            <div class="animation" data-animation="slideInDown" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 0;">
+                <img data-parallax="{&quot;x&quot;: 50, &quot;smoothness&quot;: 20}" src="~/assets/images/shape1.png" alt="shape1">
+            </div>
+        </div>
+        <div class="shape2 layer" data-depth="0.1" style="transform: translate3d(-4.53271px, -0.662919px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block;">
+            <div class="animation" data-animation="slideInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 0;">
+                <img data-parallax="{&quot;x&quot;: 50, &quot;smoothness&quot;: 20}" src="~/assets/images/shape2.png" alt="shape2">
+            </div>
+        </div>
+        <div class="shape3 layer" data-depth="0.1" style="transform: translate3d(-4.53271px, -0.662919px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block;">
+            <div class="animation animated slideInUp" data-animation="slideInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">
+                <img data-parallax="{&quot;x&quot;: 50, &quot;smoothness&quot;: 20}" src="~/assets/images/shape3.png" alt="shape3">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+﻿@page "{Id}"
+@using Microsoft.AspNetCore.Authorization
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.Application.Common.Interfaces
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MasterItems.Pages.UpdateDocumentCategoryModel
+@inject IStringLocalizer<Pages.UpdateDocumentCategoryModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject ICurrentUserService UserService
+@inject IAuthorizationService AuthorizationService
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListDocumentCategory",new {area="MasterItems"})">@LocalizationService.Get("ListDocumentCategoryRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("UpdateDocumentCategoryRes")</li>
+        </ol>
+    </nav>
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="col-md-6">
+        </div>
+    </div>
+    <div class="card-body">
+        <form asp-page="UpdateRequiredDocument" method="post">
+            <div class="col-md-6">
+                <input asp-for="Command.Id" type="hidden" />
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.CategoryName"> @Localizer["CategoryNamelbl"] :</label>
+                    <input required class="form-control form-control-lg" asp-for="Command.CategoryName" />
+                    <span class="text-danger" asp-validation-for="Command.CategoryName"></span>
+                </div>
+                <div class="form-group">
+                    <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Update" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

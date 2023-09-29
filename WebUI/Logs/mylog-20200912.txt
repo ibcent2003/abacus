@@ -1,0 +1,94 @@
+2020-09-12T02:44:36.6028327+00:00 0HM2MOMNMALRB:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2150 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T02:48:32.7766697+00:00 0HM2MOMNMALRB:00000053 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Pages/Shared/_LayoutLatest.cshtml': 'scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-12T02:53:38.1280937+00:00 0HM2MOMNMALRD:00000013 [WRN] Wbc.Cube Long Running Request: "GetMenuResourceQuery" (914 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" GetMenuResourceQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T02:53:39.2586044+00:00 0HM2MOMNMALRD:0000001D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (561 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T02:53:40.5766246+00:00 0HM2MOMNMALRD:0000001F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1772 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T02:53:40.5858637+00:00 0HM2MOMNMALRD:00000021 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1785 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T02:53:41.0281775+00:00 0HM2MOMNMALRD:00000029 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1335 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T23:36:25.5496441+00:00 0HM2NEI9U3AKT:0000005B [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (757 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T23:36:25.5680318+00:00 0HM2NEI9U3AKT:00000063 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (800 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T23:36:26.2082893+00:00 0HM2NEI9U3AKT:00000067 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (533 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T23:36:26.2274324+00:00 0HM2NEI9U3AKT:00000065 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (553 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T23:36:41.9074599+00:00 0HM2NEI9U3AKT:00000089 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (890 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-12T23:38:08.6502092+00:00 0HM2NEI9U3AKT:000000C9 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Wbc.WebUI.Areas.GeneralGoods.Pages.GeneralGoodDutyResultModel.OnGet(Guid transactionId) in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Areas\GeneralGoods\Pages\GeneralGoodDutyResult.cshtml.cs:line 41
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-12T23:55:48.7130343+00:00 0HM2NETA4GQCB:0000004B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The layout view 'Shared/_PlainLayout' could not be located. The following locations were searched:
+/Areas/TariffManager/Pages/Shared/_PlainLayout.en-GB.cshtml
+/Areas/TariffManager/Pages/Shared/_PlainLayout.en.cshtml
+/Areas/TariffManager/Pages/Shared/_PlainLayout.cshtml
+/Areas/TariffManager/Pages/Shared/Shared/_PlainLayout.en-GB.cshtml
+/Areas/TariffManager/Pages/Shared/Shared/_PlainLayout.en.cshtml
+/Areas/TariffManager/Pages/Shared/Shared/_PlainLayout.cshtml
+/Areas/TariffManager/Views/Shared/Shared/_PlainLayout.en-GB.cshtml
+/Areas/TariffManager/Views/Shared/Shared/_PlainLayout.en.cshtml
+/Areas/TariffManager/Views/Shared/Shared/_PlainLayout.cshtml
+/Pages/Shared/Shared/_PlainLayout.en-GB.cshtml
+/Pages/Shared/Shared/_PlainLayout.en.cshtml
+/Pages/Shared/Shared/_PlainLayout.cshtml
+/Views/Shared/Shared/_PlainLayout.en-GB.cshtml
+/Views/Shared/Shared/_PlainLayout.en.cshtml
+/Views/Shared/Shared/_PlainLayout.cshtml
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

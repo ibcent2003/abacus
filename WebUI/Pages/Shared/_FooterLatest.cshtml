@@ -1,0 +1,101 @@
+﻿@using IdentityServer4.Extensions
+@using Microsoft.AspNetCore.Authentication.Cookies
+@using Newtonsoft.Json
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.Application.Common.Interfaces
+@using Wbc.WebUI.Services
+@inject CommonLocalizationService Localizer
+@inject ICurrentUserService UserService
+
+<!-- START FOOTER -->
+<footer class="footer_dark">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="widget">
+                        <div class="footer_logo">
+                            <a href="index.html"><img src="~/assets/images/whiteweblogo.png" alt="logo" width="200" /></a>
+                        </div>
+                        <p> @Localizer.Get("FooterExcerpt")</p>
+                        <ul class="social_icons rounded_social social_white social_style1">
+                            <li><a href="https://web.facebook.com/WestblueConsulting/"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/westblueltd"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/westblueconsulting/"><i class="ion-social-instagram-outline"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/westblueconsulting/"><i class="ion-social-linkedin-outline"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-6">
+                    <div class="widget">
+                        <h6 class="widget_title">@Localizer.Get("UsefulLinks")</h6>
+                        <ul class="widget_links">
+                            <li><a asp-page="/About">@Localizer.Get("About")</a></li>
+                            <li><a asp-page="/Pricing">@Localizer.Get("Pricing")</a></li>
+                            <li><a asp-page="/ContactUs">@Localizer.Get("ContactUs")</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-6">
+                    <div class="widget">
+                        <h6 class="widget_title">@Localizer.Get("Information")</h6>
+                        <ul class="widget_links">
+                            <li><a asp-page="/Support">@Localizer.Get("Support")</a></li>
+                            <li><a asp-page="/Documentation">@Localizer.Get("Developer")</a></li>
+                            <li><a asp-page="/Documentation">@Localizer.Get("Documentation")</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="widget">
+                        <h6 class="widget_title">Contact Info</h6>
+                        <ul class="contact_info contact_info_light">
+                            <li>
+                                <i class="ti-location-pin"></i>
+                                <p>@Localizer.Get("Address")</p>
+                            </li>
+                            <li>
+                                <i class="ti-email"></i>
+                                <a href="mailto:info@etradehubs.com">info@etradehubs.com</a>
+                            </li>
+                            <li>
+                                <i class="ti-mobile"></i>
+                                <p>+ 233 (0) 303969554 </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="bottom_footer border-top-tran">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="mb-md-0 text-center text-md-left">
+                                ©
+                                <script>document.write(new Date().getFullYear());</script> @Localizer.Get("Trademark")
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+
+
+                           
+
+                            <ul class="list_none footer_link text-center text-md-right">
+                                <li class="list-inline-item">
+                                    <vc:culture-handler />
+                                </li>
+                                <li><a asp-page="/TermsConditions" style="color: #F5A623;">@Localizer.Get("TermsConditions")</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->

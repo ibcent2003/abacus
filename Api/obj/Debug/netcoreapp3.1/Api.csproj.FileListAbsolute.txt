@@ -1,0 +1,739 @@
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Scrutor.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfoInputs.cache
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfo.cs
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Api.RazorTargetAssemblyInfo.cache
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Api.csproj.CopyComplete
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Wbc.Api.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Wbc.Api.xml
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Wbc.Api.pdb
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Wbc.Api.StaticWebAssets.xml
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Wbc.Api.exe
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Wbc.Api.deps.json
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Wbc.Api.runtimeconfig.json
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Wbc.Api.runtimeconfig.dev.json
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Wbc.Api.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Wbc.Api.pdb
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Wbc.Api.xml
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\staticwebassets\Wbc.Api.StaticWebAssets.Manifest.cache
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\staticwebassets\Wbc.Api.StaticWebAssets.xml
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ExtraLINQ.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\IdentityModel.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ICSharpCode.SharpZipLib.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\WeakEvent.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\OptimaJet.Workflow.Core.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\OptimaJet.Workflow.MSSQL.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\en\Application.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\fr\Application.resources.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\IdentityServer4.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\IdentityServer4.AspNetIdentity.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.Storage.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\IdentityServer4.Storage.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\Newton\source\repos\Entity Registration\src\Api\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Wbc.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Newton\source\repos\Entity Registration\src\Api\obj\Debug\netcoreapp3.1\Wbc.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\IdentityModel.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\IdentityServer4.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\IdentityServer4.AspNetIdentity.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.Storage.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\IdentityServer4.Storage.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Scrutor.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ICSharpCode.SharpZipLib.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\WeakEvent.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\OptimaJet.Workflow.Core.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\OptimaJet.Workflow.MSSQL.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\en\Application.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\fr\Application.resources.dll
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfoInputs.cache
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfo.cs
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Wbc.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Wbc.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Api.RazorTargetAssemblyInfo.cache
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Api.csproj.CopyComplete
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Wbc.Api.dll
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Wbc.Api.xml
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Wbc.Api.pdb
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Wbc.Api.StaticWebAssets.xml
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Wbc.Api.exe
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Wbc.Api.deps.json
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Wbc.Api.runtimeconfig.json
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Wbc.Api.runtimeconfig.dev.json
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Wbc.Api.dll
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Wbc.Api.pdb
+C:\Users\ibrahim\source\repos\Switch\Api\bin\Debug\netcoreapp3.1\Wbc.Api.xml
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\staticwebassets\Wbc.Api.StaticWebAssets.Manifest.cache
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\staticwebassets\Wbc.Api.StaticWebAssets.xml
+C:\Users\ibrahim\source\repos\Switch\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\IdentityModel.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\IdentityServer4.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\IdentityServer4.AspNetIdentity.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.Storage.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\IdentityServer4.Storage.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Scrutor.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ICSharpCode.SharpZipLib.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\WeakEvent.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\OptimaJet.Workflow.Core.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\OptimaJet.Workflow.MSSQL.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\en\Application.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\fr\Application.resources.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfoInputs.cache
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfo.cs
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Wbc.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Wbc.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Api.RazorTargetAssemblyInfo.cache
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Api.csproj.CopyComplete
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Wbc.Api.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Wbc.Api.xml
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Wbc.Api.pdb
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Wbc.Api.StaticWebAssets.xml
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Wbc.Api.exe
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Wbc.Api.deps.json
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Wbc.Api.runtimeconfig.json
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Wbc.Api.runtimeconfig.dev.json
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Wbc.Api.dll
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Wbc.Api.pdb
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\bin\Debug\netcoreapp3.1\Wbc.Api.xml
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\staticwebassets\Wbc.Api.StaticWebAssets.Manifest.cache
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\staticwebassets\Wbc.Api.StaticWebAssets.xml
+C:\Users\ibrahim\source\repos\SwitchDevelop\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfoInputs.cache
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfo.cs
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Wbc.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Wbc.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Wbc.Api.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Wbc.Api.xml
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Wbc.Api.pdb
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Wbc.Api.StaticWebAssets.xml
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Wbc.Api.exe
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Wbc.Api.deps.json
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Wbc.Api.runtimeconfig.json
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Wbc.Api.runtimeconfig.dev.json
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Wbc.Api.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Wbc.Api.pdb
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Wbc.Api.xml
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\IdentityModel.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\IdentityServer4.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\IdentityServer4.AspNetIdentity.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.Storage.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\IdentityServer4.Storage.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Scrutor.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ICSharpCode.SharpZipLib.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\WeakEvent.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\OptimaJet.Workflow.Core.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\OptimaJet.Workflow.MSSQL.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\en\Application.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\bin\Debug\netcoreapp3.1\fr\Application.resources.dll
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Api.RazorTargetAssemblyInfo.cache
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Api.csproj.CopyComplete
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\staticwebassets\Wbc.Api.StaticWebAssets.Manifest.cache
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\staticwebassets\Wbc.Api.StaticWebAssets.xml
+C:\Users\ibrahim\source\repos\Abacus\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache

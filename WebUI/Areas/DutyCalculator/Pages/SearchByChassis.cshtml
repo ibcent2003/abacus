@@ -1,0 +1,74 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.Extensions.Localization
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.DutyCalculator.Pages.SearchByChassisModel
+@inject IStringLocalizer<SearchByChassisModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("SearchByChassisRes")</li>
+        </ol>
+    </nav>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">@Localizer["SearchByChassisFormHeader"]</h5>
+
+                </div>
+                <div class="card-body">
+                    <form asp-page="SearchByChassis" method="post">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="inputUsername">Chassis/VIN</label>
+                                    <input type="text" asp-for="Command.chassis" class="form-control" id="chassis" />
+                                    <span class="text-danger" asp-validation-for="Command.chassis"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Search" />
+                    </form>
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+   
+}

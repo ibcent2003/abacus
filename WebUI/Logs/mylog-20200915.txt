@@ -1,0 +1,28 @@
+2020-09-15T10:29:07.7663714+00:00 0HM2PC23M4947:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (777 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T11:46:30.1564692+00:00 0HM2PC23M494B:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1176 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T11:59:00.8592313+00:00 0HM2PC23M494D:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (936 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T12:08:19.5554263+00:00 0HM2PC23M494E:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (996 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T16:26:33.2216587+00:00 0HM2PIG5OMD59:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2135 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T16:28:25.3289218+00:00 0HM2PIG5OMD59:00000055 [WRN] Wbc.Cube Long Running Request: "CreateHSCodeSearchCommand" (561 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" CreateHSCodeSearchCommand { HScode: "3920.92.00.00", CountryId: 1 } (6c601218)
+2020-09-15T16:38:31.1408554+00:00 0HM2PIG5OMD5A:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1323 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T17:11:32.4526734+00:00 0HM2PJ8N2CTJ9:0000004D [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (2040 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T17:12:07.6649985+00:00 0HM2PJ8N2CTJ9:00000055 [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (672 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T17:16:03.6187657+00:00 0HM2PJ8N2CTJ9:0000007F [WRN] Wbc.Cube Long Running Request: "CreateGeneralGoodsSearchCommand" (3613 milliseconds) "7460e730-2d84-4c5b-a39e-afe228c2995e" "(null)" CreateGeneralGoodsSearchCommand { HsCode: "1508.90.10.00", FOB: 8000, Freight: 150, Insurance: 100, CurrencyId: 111, CountryId: 1, ExportingCountryId: 3, Keyword: "EDIBLE GROUNDNUT OIL", ContainerSize: "20feet" } (6c601218)
+2020-09-15T17:23:51.5696362+00:00 0HM2PJ8N2CTJA:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1376 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T17:36:06.4121198+00:00 0HM2PJ8N2CTJC:0000000F [WRN] Wbc.Cube Long Running Request: "GetUserPermissionsQuery" (1613 milliseconds) "" "" GetUserPermissionsQuery { UserId: "7460e730-2d84-4c5b-a39e-afe228c2995e" } (6c601218)
+2020-09-15T23:00:43.1141038+00:00 0HM2PPC9LCACA:00000005 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Wbc.WebUI.Dependencies.AuthenticationDependencyInjection.<>c.<<AddOidcAuthentication>b__0_2>d.MoveNext() in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Dependencies\AuthenticationDependencyInjection.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-15T23:11:58.0977502+00:00 0HM2PPFQ90ED3:00000005 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Wbc.WebUI.Dependencies.AuthenticationDependencyInjection.<>c.<<AddOidcAuthentication>b__0_2>d.MoveNext() in C:\Users\ibrahim\Source\Repos\Abacus\WebUI\Dependencies\AuthenticationDependencyInjection.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

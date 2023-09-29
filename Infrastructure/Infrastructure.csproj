@@ -1,0 +1,90 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Infrastructure</RootNamespace>
+    <AssemblyName>Infrastructure</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Persistence\Migrations\20200608112822_AddResourceManagementTables.cs" />
+    <Compile Remove="Persistence\Migrations\20200608112822_AddResourceManagementTables.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200608113620_AddPropertiesToAuditableEntity.cs" />
+    <Compile Remove="Persistence\Migrations\20200608113620_AddPropertiesToAuditableEntity.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200608114838_AddOrganisationResourceUserEntity.cs" />
+    <Compile Remove="Persistence\Migrations\20200608114838_AddOrganisationResourceUserEntity.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200608114945_AddOrganisationResourceUserEntityWithoutDefaultValue.cs" />
+    <Compile Remove="Persistence\Migrations\20200608114945_AddOrganisationResourceUserEntityWithoutDefaultValue.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200711163846_SubscriberProcessWorkflowEntity.cs" />
+    <Compile Remove="Persistence\Migrations\20200711163846_SubscriberProcessWorkflowEntity.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200711200114_SubscriberToDocumentRelationship.cs" />
+    <Compile Remove="Persistence\Migrations\20200711200114_SubscriberToDocumentRelationship.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200713133912_ApprovalIsInternalUse.cs" />
+    <Compile Remove="Persistence\Migrations\20200713133912_ApprovalIsInternalUse.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200714224837_UpdatedRequiredDocumentEntity.cs" />
+    <Compile Remove="Persistence\Migrations\20200714224837_UpdatedRequiredDocumentEntity.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200714225753_UpdatedRequiredDocumentEntityConfiguration.cs" />
+    <Compile Remove="Persistence\Migrations\20200714225753_UpdatedRequiredDocumentEntityConfiguration.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200714230030_UpdatedRequiredDocumentEntityConfiguration.cs" />
+    <Compile Remove="Persistence\Migrations\20200714230030_UpdatedRequiredDocumentEntityConfiguration.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200911002535_UserHSCodePoolUpdateWithExportingCountry.cs" />
+    <Compile Remove="Persistence\Migrations\20200911002535_UserHSCodePoolUpdateWithExportingCountry.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200913225147_AgencyDocumentUpdateHScodeId.cs" />
+    <Compile Remove="Persistence\Migrations\20200913225147_AgencyDocumentUpdateHScodeId.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200915140840_ChapterNewEntity.cs" />
+    <Compile Remove="Persistence\Migrations\20200915140840_ChapterNewEntity.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200915142428_ChapterNewEntity.cs" />
+    <Compile Remove="Persistence\Migrations\20200915142428_ChapterNewEntity.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200915143658_DropTariff.cs" />
+    <Compile Remove="Persistence\Migrations\20200915143658_DropTariff.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200915160636_ChapterNew.cs" />
+    <Compile Remove="Persistence\Migrations\20200915160636_ChapterNew.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200915161052_ChapterNew.cs" />
+    <Compile Remove="Persistence\Migrations\20200915161052_ChapterNew.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200915161353_ChapterNew.cs" />
+    <Compile Remove="Persistence\Migrations\20200915161353_ChapterNew.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200917134015_ChapterEntityNewUpdate.cs" />
+    <Compile Remove="Persistence\Migrations\20200917134015_ChapterEntityNewUpdate.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200917134827_ChapterEntityNewUpdate.cs" />
+    <Compile Remove="Persistence\Migrations\20200917134827_ChapterEntityNewUpdate.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200917135618_ChapterEntityNewUpdate.cs" />
+    <Compile Remove="Persistence\Migrations\20200917135618_ChapterEntityNewUpdate.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200917141307_ChapterEntityNewUpdate.cs" />
+    <Compile Remove="Persistence\Migrations\20200917141307_ChapterEntityNewUpdate.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200917142551_ChapterEntityNewUpdate.cs" />
+    <Compile Remove="Persistence\Migrations\20200917142551_ChapterEntityNewUpdate.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200917205928_HSCodeSectionEntity.cs" />
+    <Compile Remove="Persistence\Migrations\20200917205928_HSCodeSectionEntity.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200917212938_HSCodeSectionEntity.cs" />
+    <Compile Remove="Persistence\Migrations\20200917212938_HSCodeSectionEntity.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200924112704_HSCodeDocumentUpdate.cs" />
+    <Compile Remove="Persistence\Migrations\20200924112704_HSCodeDocumentUpdate.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200929145453_DocumentCategoryUpdateRemoveDocumentType.cs" />
+    <Compile Remove="Persistence\Migrations\20200929145453_DocumentCategoryUpdateRemoveDocumentType.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200929150520_DocumentCategoryUpdateRemoveDocumentType.cs" />
+    <Compile Remove="Persistence\Migrations\20200929150520_DocumentCategoryUpdateRemoveDocumentType.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.3.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.5" />
+    <PackageReference Include="CsvHelper" Version="15.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="WorkflowEngine.NETCore-ProviderForMSSQL" Version="4.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+
+</Project>

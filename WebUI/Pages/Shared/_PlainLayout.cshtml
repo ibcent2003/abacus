@@ -1,0 +1,137 @@
+﻿@using IdentityServer4.Extensions
+@using Microsoft.AspNetCore.Authentication.Cookies
+@using Newtonsoft.Json
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.Application.Common.Interfaces
+@using Wbc.WebUI.Services
+@inject CommonLocalizationService Localizer
+@inject ICurrentUserService UserService
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    @{var title = ViewBag.Title + " | E-Trade Hubs";}
+    <title>@title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Abacus, Used Vehicle Duty Calculator, General Goods Duty Calculator">
+    <meta name="keywords" content=" Used, Vehicle, Duty Calculator, General, Goods, Duty Calculator">
+
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/images/logo_sw.png">
+    <title>eTrade Hub - Abacus</title>
+    <link rel="stylesheet" href="~/assets/css/animate.css">
+    <!-- Latest Bootstrap min CSS -->
+
+
+
+
+
+    <link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="~/assets/css/all.min.css">
+    <link rel="stylesheet" href="~/assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="~/assets/css/linearicons.css">
+    <link rel="stylesheet" href="~/assets/css/flaticon.css">
+    <link rel="stylesheet" href="~/assets/css/simple-line-icons.css">
+    <link rel="stylesheet" href="~/assets/css/magnific-popup.css">
+    <!--- owl carousel CSS-->
+    <link rel="stylesheet" href="~/assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/owlcarousel/css/owl.theme.css">
+    <link rel="stylesheet" href="~/assets/owlcarousel/css/owl.theme.default.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="~/assets/css/magnific-popup.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/css/responsive.css">
+    <link rel="stylesheet" id="layoutstyle" href="~/assets/color/theme-brand.css">
+
+</head>
+<body>
+    <div>
+        <!-- LOADER -->
+        <div class="preloader">
+            <div class="loader-section section-top"></div>
+            <div class="lds-ellipsis">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="loader-section section-bottom"></div>
+        </div>
+        <!-- END LOADER -->
+        <partial name="_MainMenuLatest" />
+
+        <div class="breadcrumb_section page_small page_title_light background_bg" data-img-src="/assets/images/banner.png" style="background-image: url(&quot;/assets/images/banner.png&quot;);">
+            <div class="container">
+                <!-- STRART CONTAINER -->
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="page-title">
+                            <h1> @RenderSection("PageName", false)</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 mt-3 mt-md-0">
+                        <ol class="breadcrumb justify-content-md-end">
+                            <li class="breadcrumb-item"><a href="/" style="color:white">Home</a></li>
+                            <li class="breadcrumb-item active" style="color:white">@RenderSection("PageDescription", false)</li>
+                            @RenderSection("ActivePage", false)
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        @RenderBody()
+    </div>
+    <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
+    <partial name="_FooterLatest" />
+
+
+</body>
+</html>
+
+
+
+
+<script src="~/assets/js/popper.min.js"></script>
+
+<script src="~/assets/js/jquery-1.12.4.min.js"></script>
+<!-- Latest compiled and minified Bootstrap -->
+<script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- owl-carousel min js  -->
+<script src="~/assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup min js  -->
+<script src="~/assets/js/magnific-popup.min.js"></script>
+<!-- waypoints min js  -->
+<script src="~/assets/js/waypoints.min.js"></script>
+<!-- parallax js  -->
+<script src="~/assets/js/parallax.js"></script>
+<!-- countdown js  -->
+<script src="~/assets/js/jquery.countdown.min.js"></script>
+<!-- fit video  -->
+<script src="~/assets/js/Hoverparallax.min.js"></script>
+<!-- jquery.countTo js  -->
+<script src="~/assets/js/jquery.countTo.js"></script>
+<!-- imagesloaded js -->
+<script src="~/assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- isotope min js -->
+<script src="~/assets/js/isotope.min.js"></script>
+<!-- jquery.appear js  -->
+<script src="~/assets/js/jquery.appear.js"></script>
+<!-- scripts js -->
+<script src="~/assets/js/scripts.js"></script>
+
+@RenderSection("Scripts", required: false)

@@ -1,0 +1,56 @@
+﻿@page "{Id}"
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.Permission.Pages.DeleteOrganisationApprovalRoleModel
+@inject IStringLocalizer<Pages.DeleteOrganisationApprovalRoleModel> Localizer
+@inject CommonLocalizationService LocalizationService
+
+@section Css
+{
+
+    <link href="~/lib/Select2/css/select2.css" rel="stylesheet" />
+}
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListOrganisationApprovalRole",new {area="Permission"})">@LocalizationService.Get("ListOrganisationApprovalRoleRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("DeleteOrganisationApprovalRoleRes")</li>
+        </ol>
+    </nav>
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title  text-danger">@Localizer["FormHeader"]</h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="DeleteOrganisationApprovalRole" method="post">
+            <input type="hidden" asp-for="Command.Id" />
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.RoleName"> @Localizer["RoleNamelbl"] :</label>
+                    <input readonly="readonly" class="form-control form-control-lg" asp-for="Command.RoleName" />
+                </div>
+                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Delete" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
+

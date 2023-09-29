@@ -1,0 +1,95 @@
+﻿@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.Application.Workflow.Query.GetApprovalCommands.ApprovalCommandsVm
+@inject CommonLocalizationService LocalizationService
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-page="Approval" method="post">
+            <input type="hidden" asp-for="ProcessId"/>
+            <input type="hidden" asp-for="DocumentSource"/>
+            <table class="table table-condensed">
+                <tbody>
+                <tr>
+                    <td style="text-align: right">@LocalizationService.Get("CurrentStatuslbl") : </td>
+                    <td>
+                        @Model.CurrentState
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">@LocalizationService.Get("SelectActionlbl") : <sup style="color: red">*</sup></td>
+                    <td>
+                        <select asp-for="SelectedCommand" required="required" style="width: 300px;" class="form-control form-control-lg" asp-items="Model.Commands.Select(x => new SelectListItem {Text = x.Key, Value = x.Value})">
+                            <option value="">@LocalizationService.Get("SelectListDefaultValue")</option>
+                        </select>
+                        @Html.ValidationMessageFor(x => x.SelectedCommand)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">
+                        @LocalizationService.Get("Commentslbl")
+                    </td>
+                    <td>
+                        <textarea asp-for="Comments" type="text" maxlength="400" style="width: 100%" class="form-control form-control-lg"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 20px; text-align: right" colspan="5">
+                        <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Create"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h4>@LocalizationService.Get("DocumentHistory")</h4>
+     
+        <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>@LocalizationService.Get("From")</th>
+                        <th>@LocalizationService.Get("To")</th>
+                        <th>@LocalizationService.Get("Command")</th>
+                        <th>@LocalizationService.Get("TransitionTime")</th>
+                        <th>@LocalizationService.Get("comment")</th>
+                        <th>@LocalizationService.Get("Availablefor")</th>
+                    </tr>
+                </thead>
+                @{ var i = 1;}
+                <tbody>
+                    @if (Model.DocumentTransitionHistoryDtos.Any())
+                    {
+
+                        foreach (var modelDocumentTransitionHistoryDto in Model.DocumentTransitionHistoryDtos)
+                        {
+                            <tr>
+                                <td>@i</td>
+                                <td>@modelDocumentTransitionHistoryDto.InitialState</td>
+                                <td>@modelDocumentTransitionHistoryDto.DestinationState</td>
+                                <td>@modelDocumentTransitionHistoryDto.Command</td>
+                                <td>
+                                    @if (@modelDocumentTransitionHistoryDto.TransitionTime.HasValue)
+                                    {
+                                        @Html.Raw($"{modelDocumentTransitionHistoryDto.TransitionTime.Value:yyyy-MM-dd HH:mm:ss}")
+                                    }
+                                </td>
+                                <td>
+                                    @modelDocumentTransitionHistoryDto.Comment
+                                </td>
+                                <td>@modelDocumentTransitionHistoryDto.AllowedToRoles</td>
+                            </tr>
+
+                            i++;
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+      
+    </div>
+</div>

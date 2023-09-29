@@ -1,0 +1,161 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MenuResource.Pages.ListResourceModel
+@inject IStringLocalizer<ListResourceModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+
+@{
+    <link href="~/lib/DataTables/datatables.css" rel="stylesheet" />
+}
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+    var canUpdate = await AuthorizationService.AuthorizeAsync(User, Policies.CanUpdateResource.GetAttributeStringValue());
+    var canDelete = await AuthorizationService.AuthorizeAsync(User, Policies.CanDeleteResource.GetAttributeStringValue());
+    var canAdd = await AuthorizationService.AuthorizeAsync(User, Policies.CanAddResource.GetAttributeStringValue());
+
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("ListResourcesRes")</li>
+        </ol>
+    </nav>
+}
+
+@Html.AntiForgeryToken()
+
+<div class="card">
+    <div class="card-header">
+        <a asp-page="addresource"  class="btn btn-outline-primary btn-lg"><span class="fa fa-plus"></span>Add New</a>
+    </div>
+    <div class="card-body">
+        <div class="table table-responsive">
+            <table id="resources" class="table table-striped table-condensed" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th>
+                            S/N
+                        </th>
+                        <th>
+                            @Localizer["ResourceNameColumn"]
+                        </th>
+                        <th>
+                            @Localizer["LocalizationKeyColumn"]
+                        </th>
+                        <th>
+                            @Localizer["ResourceAreaNameColumn"]
+                        </th>
+                        <th>@Localizer["OrderColumn"]</th>
+                        <th>
+                            @Localizer["ResourcePermissionColumn"]
+                        </th>
+
+                        @if (canUpdate.Succeeded)
+                        {
+                            <th></th>
+                        }
+                        @if (canDelete.Succeeded)
+                        {
+
+                            <th></th>
+                        }
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script src="~/lib/DataTables/datatables.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var canUpdate = @canUpdate.Succeeded.ToString().ToLower();
+            var canDelete = @canDelete.Succeeded.ToString().ToLower();
+            var deleteBtnlbl = '@LocalizationService.Get("DataTableDeleteBtnlbl")';
+            var updateBtnlbl = '@LocalizationService.Get("DataTableUpdateBtnlbl")';
+
+            var columns = [
+                { "data": "id", "orderable": false },
+                { "data": "resourcePage", "orderable": true },
+                { "data": "localLizationKey", "orderable": true },
+                { "data": "areaName", "orderable": false },
+                { "data": "order", "orderable": false },
+                { "data": "persmissionDescription", "orderable": false }
+
+            ];
+
+            if (canUpdate)
+            {
+                columns.push({
+                    "data": "id", "orderable": false, "sClass": "text-center", "render": function (data, type, row )
+                {
+                    return '<a  href="/MenuResource/UpdateResource/' + data + '"><i class="text-success fas fa-edit"></i> ' + updateBtnlbl + ' </a>';
+
+                }});
+            }
+
+            if (canDelete)
+            {
+                columns.push({
+                    "data": "id", "orderable": false, "sClass": "text-center", "render": function(data, type, row)
+                    {
+                        return '<a  href="/MenuResource/DeleteResource/' + data + '"><i class="text-danger fas fa-trash"></i> ' + deleteBtnlbl + ' </a>';
+                    }
+                });
+            }
+
+            $('#resources').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "responsive" : true,
+                "info": true,
+                "stateSave": true,
+                "lengthMenu":
+                [
+                    [10, 20, 50, -1], [10, 20, 50, "All"]
+                ],
+                "ajax": {
+                    "url":
+                        '/MenuResource/ListResource',
+                    "type": "POST",
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val()
+                    }
+                },
+                "fnRowCallback": function(nRow, aData, iDisplayIndex)
+                {
+
+                    $("td:first", nRow).html(iDisplayIndex + 1 + this.api().page.info().start);
+
+                    return nRow;
+                },
+                "columns": columns,
+                "order": [[1, "asc"]]
+            });
+        });
+
+    </script>
+}

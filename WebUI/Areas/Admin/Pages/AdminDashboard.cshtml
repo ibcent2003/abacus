@@ -1,0 +1,330 @@
+﻿@page
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IStringLocalizer<AdminDashboardModel> Localizer
+@inject IHtmlLocalizer<AdminDashboardModel> HtmlLocalizer
+@model Wbc.WebUI.Areas.Admin.Pages.AdminDashboardModel
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
+@{
+    ViewData["Title"] = "Administrator Dashboard";
+    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+    var requestCulture = requestCultureFeature.RequestCulture;
+
+
+}
+
+
+
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+<div class="row">
+
+
+    @*var isInRole =_currentUserService.GetCurrentUserRoles();
+        isInRole.Contains("etrade Tool Admin")*@
+
+
+    <div class="col-md-12">
+
+        <div class="row">
+            <div class="col-md-6 col-lg-3 col-xl">
+                <div class="card">
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col mt-0">
+                                <h5 class="card-title"><a asp-page="PendingDutyApprovalList" asp-area="Admin">@Localizer["SubmittedDutiesBox"]</a></h5>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="avatar">
+                                    <div class="avatar-title rounded-circle bg-primary-dark">
+                                        <i class="align-middle" data-feather="dollar-sign"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="display-5 mt-1 mb-3">@Model.CountSubmittedDuty.Count()</h1>
+                        <div class="mb-0">
+                            There are @Model.CountSubmittedDuty.Count() submitted duties in the pool
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col mt-0">
+                                <h5 class="card-title"><a asp-page="OwnedByDutyApprovalList" asp-area="Admin">@Localizer["OwnedDutiesBox"]</a></h5>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="avatar">
+                                    <div class="avatar-title rounded-circle bg-primary-dark">
+                                        <i class="align-middle" data-feather="shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="display-5 mt-1 mb-3">@Model.CountOwnedByDuty.Count()</h1>
+                        <div class="mb-0">
+                            You have owned <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> @Model.CountOwnedByDuty.Count() </span> Pending Duties
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col mt-0">
+                                <h5 class="card-title"><a asp-page="AllCalculatedDutyList" asp-area="Admin">@Localizer["CalculatedDutiesBox"]</a></h5>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="avatar">
+                                    <div class="avatar-title rounded-circle bg-primary-dark">
+                                        <i class="align-middle" data-feather="activity"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="display-5 mt-1 mb-3">@Model.CountAllCalculatedDuty.Count()</h1>
+                        <div class="mb-0">
+                            Genenal Duties calculated are <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> @Model.CountAllCalculatedDuty.Count() </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col mt-0">
+                                <h5 class="card-title">@Localizer["NoOfSubscriberBox"]</h5>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="avatar">
+                                    <div class="avatar-title rounded-circle bg-primary-dark">
+                                        <i class="align-middle" data-feather="dollar-sign"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="display-5 mt-1 mb-3">50</h1>
+                        <div class="mb-0">
+                            The total number of subscribers are <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 50 </span>.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @* Add Transaction history here*@
+      
+
+
+    </div>
+
+
+</div>
+
+@section Scripts
+{
+    <script src="http://onlinefreetools.net/wp-content/uploads/demo/menu/metismenu/js/hor_metisMenu.min.js"></script>
+    <script>
+        $(function () {
+            // Line chart
+            new Chart(document.getElementById("chartjs-dashboard-line"), {
+                type: 'line',
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    datasets: [{
+                        label: "Orders",
+                        fill: true,
+                        backgroundColor: window.theme.primary,
+                        borderColor: window.theme.primary,
+                        borderWidth: 2,
+                        data: [3, 2, 3, 5, 6, 5, 4, 6, 9, 10, 8, 9]
+                    },
+                    {
+                        label: "Sales ($)",
+                        fill: true,
+                        backgroundColor: "rgba(0, 0, 0, 0.05)",
+                        borderColor: "rgba(0, 0, 0, 0.05)",
+                        borderWidth: 2,
+                        data: [5, 4, 10, 15, 16, 12, 10, 13, 20, 22, 18, 20]
+                    }
+                    ]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        intersect: false
+                    },
+                    hover: {
+                        intersect: true
+                    },
+                    plugins: {
+                        filler: {
+                            propagate: false
+                        }
+                    },
+                    elements: {
+                        point: {
+                            radius: 0
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            reverse: true,
+                            gridLines: {
+                                color: "rgba(0,0,0,0.0)"
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                stepSize: 5
+                            },
+                            display: true,
+                            gridLines: {
+                                color: "rgba(0,0,0,0)",
+                                fontColor: "#fff"
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            // Bar chart
+            new Chart(document.getElementById("chartjs-dashboard-bar-alt"), {
+                type: "bar",
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    datasets: [{
+                        label: "Last year",
+                        backgroundColor: window.theme.primary,
+                        borderColor: window.theme.primary,
+                        hoverBackgroundColor: window.theme.primary,
+                        hoverBorderColor: window.theme.primary,
+                        data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+                        barPercentage: .75,
+                        categoryPercentage: .5
+                    }, {
+                        label: "This year",
+                        backgroundColor: "#E8EAED",
+                        borderColor: "#E8EAED",
+                        hoverBackgroundColor: "#E8EAED",
+                        hoverBorderColor: "#E8EAED",
+                        data: [69, 66, 24, 48, 52, 51, 44, 53, 62, 79, 51, 68],
+                        barPercentage: .75,
+                        categoryPercentage: .5
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            gridLines: {
+                                display: false
+                            },
+                            stacked: false,
+                            ticks: {
+                                stepSize: 20
+                            }
+                        }],
+                        xAxes: [{
+                            stacked: false,
+                            gridLines: {
+                                color: "transparent"
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#usa_map").vectorMap({
+                map: "us_aea",
+                backgroundColor: "transparent",
+                zoomOnScroll: false,
+                normalizeFunction: "polynomial",
+                hoverOpacity: .7,
+                hoverColor: false,
+                regionStyle: {
+                    initial: {
+                        fill: "#DCE3E8"
+                    }
+                },
+                markerStyle: {
+                    initial: {
+                        "r": 9,
+                        "fill": window.theme.primary,
+                        "fill-opacity": .9,
+                        "stroke": "#fff",
+                        "stroke-width": 7,
+                        "stroke-opacity": .4
+                    },
+                    hover: {
+                        "stroke": "#fff",
+                        "fill-opacity": 1,
+                        "stroke-width": 1.5
+                    }
+                },
+                markers: [{
+                    latLng: [37.77, -122.41],
+                    name: "San Francisco: 375"
+                }, {
+                    latLng: [40.71, -74.00],
+                    name: "New York: 350"
+                }, {
+                    latLng: [39.09, -94.57],
+                    name: "Kansas City: 250"
+                }, {
+                    latLng: [36.16, -115.13],
+                    name: "Las Vegas: 275"
+                }, {
+                    latLng: [32.77, -96.79],
+                    name: "Dallas: 225"
+                }]
+            });
+            setTimeout(function () {
+                $(window).trigger('resize');
+            }, 350)
+        })
+    </script>
+    <script>
+        $(function () {
+            $('#datatables-dashboard-products').DataTable({
+                pageLength: 6,
+                lengthChange: false,
+                bFilter: false,
+                autoWidth: false
+            });
+        });
+
+    </script>
+}
+
+

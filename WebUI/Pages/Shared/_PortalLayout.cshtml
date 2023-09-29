@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    @{var title = ViewBag.Title + " | E-Trade Hubs";}
+    <title>@title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="~/favicon.ico" type="image/png">
+    <title>E-Trade Hub</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Frontend/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Frontend/css/themify-icons.css">
+    <link rel="stylesheet" href="~/Frontend/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="~/Frontend/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Frontend/vendors/animate-css/animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="~/Frontend/css/style.css">
+    <link rel="stylesheet" href="~/Frontend/css/responsive.css">
+    <link href="~/css/modern.css" rel="stylesheet">
+</head>
+<body>
+    <div>       
+     <partial name="_MainMenu" />
+        @RenderBody()
+    </div>
+     
+    <partial name="_Footer" />
+</body>
+</html>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="~/Frontend/js/jquery-2.2.4.min.js"></script>
+<script src="~/Frontend/js/popper.js"></script>
+<script src="~/Frontend/js/bootstrap.min.js"></script>
+<script src="~/Frontend/vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="~/Frontend/js/jquery.ajaxchimp.min.js"></script>
+<script src="~/Frontend/js/waypoints.min.js"></script>
+<script src="~/Frontend/js/mail-script.js"></script>
+<script src="~/Frontend/js/contact.js"></script>
+<script src="~/Frontend/js/jquery.form.js"></script>
+<script src="~/Frontend/js/jquery.validate.min.js"></script>
+<script src="~/Frontend/js/mail-script.js"></script>
+<script src="~/Frontend/js/theme.js"></script>

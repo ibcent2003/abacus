@@ -1,0 +1,208 @@
+﻿@page
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.Registration.Pages.RegisterModel
+@inject IStringLocalizer<RegisterModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@{
+
+    Layout = "_RegisterLayout";
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+
+
+
+<div class="login_register_wrap full_screen">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10">
+                <div class="login_wrap">
+                    <div class="row no-gutters">
+                        <div class="col-md-5">
+                            <div class="bg-gd-orange padding_eight_all d-flex align-items-center justify-content-center h-100" data-img-src="~/assets/images/login_img.jpg">
+                                <a href="#"><img src="~/assets/images/signup.png" alt="logo" /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="padding_eight_all bg-white">
+                                <div class="heading_s1">
+                                    <h3>Create an Account</h3>
+                                </div>
+                                <form asp-page="Register" method="post">
+                                    <div class="form-group">
+                                        <input required maxlength="50" asp-for="Command.FirstName" class="form-control form-control-sm" placeholder="@Localizer["FirstNamelbl"]" />
+                                        <span class="text-danger" id="Command_FirstNameError" asp-validation-for="Command.FirstName"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input maxlength="50" asp-for="Command.MiddleName" class="form-control form-control-sm" placeholder="@Localizer["MiddleNamelbl"]" />
+                                        <span class="text-danger" id="Command_MiddleNameError" asp-validation-for="Command.MiddleName"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input maxlength="50" required asp-for="Command.LastName" class="form-control form-control-sm" placeholder="@Localizer["LastNamelbl"]" />
+                                        <span class="text-danger" id="Command_LastNameError" asp-validation-for="Command.LastName"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" maxlength="256" required asp-for="Command.EmailAddress" class="form-control form-control-sm" placeholder="@Localizer["EmailAddresslbl"]" />
+                                        <span class="text-danger" id="Command_AdminEmailAddressError" asp-validation-for="Command.EmailAddress"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" maxlength="15" required asp-for="Command.PhoneNumber" class="form-control form-control-sm" placeholder=" @Localizer["PhoneNumberlbl"]" />
+                                        <span class="text-danger" id="Command_PhoneNumberError" asp-validation-for="Command.PhoneNumber"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" required asp-for="Command.Password" class="form-control form-control-sm" placeholder=" @Localizer["Passwordlbl"]" onkeyup="CheckPasswordStrength(this.value)" />
+                                        <span class="text-danger" id="Command_PasswordError" asp-validation-for="Command.Password"></span>
+                                        <span id="password_strength"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" required asp-for="Command.ConfirmPassword" class="form-control form-control-sm" placeholder=" @Localizer["ConfirmPasswordlbl"]" />
+                                        <span class="text-danger" id="Command_ConfirmPasswordError" asp-validation-for="Command.ConfirmPassword"></span>
+                                    </div>
+                                    <div class="login_footer form-group">
+                                        <div class="chek-form">
+                                            <div class="custome-checkbox">
+                                                <input class="form-check-input form-control-sm" type="checkbox" name="checkbox" id="userAgreement" value="">
+                                                <label class="form-check-label" for="userAgreement"><span>I agree to terms &amp; Policy.</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-fill-out btn-block" id="btnRegister" name="register">Register</button>
+                                    </div>
+                                </form>
+                                <div class="different_login">
+                                    <span> or</span>
+                                </div>
+                                @*<ul class="btn-login list_none text-center">
+                                    <li><a href="#" class="btn btn-facebook"><i class="ion-social-facebook"></i>Facebook</a></li>
+                                    <li><a href="#" class="btn btn-google"><i class="ion-social-googleplus"></i>Google</a></li>
+                                </ul>*@
+                                <div class="form-note text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.9s" style="animation-delay: 0.9s; opacity: 1;">Already have an Account? <a href="/account/signin">Login now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape_wrap">
+        <div class="shape43">
+            <div class="animation6">
+                <img src="~/assets/images/shape2.png" alt="shape2">
+            </div>
+        </div>
+        <div class="shape5">
+            <div class="animation2">
+                <img src="~/assets/images/shape6.png" alt="shape6">
+            </div>
+        </div>
+        <div class="shape30">
+            <div class="animation3">
+                <img src="~/assets/images/shape25.png" alt="shape25">
+            </div>
+        </div>
+        <div class="shape21">
+            <div class="animation1">
+                <img src="~/assets/images/shape8.png" alt="shape8">
+            </div>
+        </div>
+        <div class="shape15">
+            <div class="animation5">
+                <img src="~/assets/images/shape9.png" alt="shape9">
+            </div>
+        </div>
+        <div class="shape28">
+            <div class="animation4">
+                <img src="~/assets/images/shape24.png" alt="shape24">
+            </div>
+        </div>
+    </div>
+</div>
+@{
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#userAgreement").change(function () {
+                console.log(this.checked)
+                if (this.checked) {
+                    console.log('agreed')
+                    $("#btnRegister").prop("disabled", false);
+                } else {
+                    console.log('disagree')
+                    $("#btnRegister").prop("disabled", true);
+                }
+            });
+
+        });
+
+
+
+        function CheckPasswordStrength(password) {
+      var password_strength = document.getElementById("password_strength");
+
+
+        //if textBox is empty
+            if (password.length==0){
+            password_strength.innerHTML = "";
+            return;
+        }
+
+        //Regular Expressions
+            var regex = new Array();
+         
+
+        regex.push("[A-Z]"); //For Uppercase Alphabet
+        regex.push("[a-z]"); //For Lowercase Alphabet
+        regex.push("[0-9]"); //For Numeric Digits
+        regex.push("[$$!%*#?&]"); //For Special Characters
+
+        var passed = 0;
+
+        //Validation for each Regular Expression
+        for (var i = 0; i < regex.length; i++) {
+            if((new RegExp (regex[i])).test(password)){
+                passed++;
+            }
+        }
+
+        //Validation for Length of Password
+            if (passed > 2 && password.length > 8){
+            passed++;
+        }
+
+        //Display of Status
+        var color = "";
+        var passwordStrength = "";
+        switch(passed){
+            case 0:
+              	break;
+            case 1:
+                passwordStrength = "Password is Weak.";
+                color = "Red";
+                break;
+            case 2:
+                passwordStrength = "Password is Good.";
+                color = "darkorange";
+                break;
+            case 3:
+            		break;
+            case 4:
+                passwordStrength = "Password is Strong.";
+                color = "Green";
+                break;
+            case 5:
+                passwordStrength = "Password is Very Strong.";
+                color = "darkgreen";
+                break;
+        }
+        password_strength.innerHTML = passwordStrength;
+        password_strength.style.color = color;
+    }
+    </script>
+}
+
+
+
+

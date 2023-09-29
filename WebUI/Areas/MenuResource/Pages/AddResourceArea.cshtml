@@ -1,0 +1,74 @@
+﻿@page
+@using Wbc.Application.Common.Enums
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MenuResource.Pages.AddResourceAreaModel
+@inject IStringLocalizer<AddResourceAreaModel> Localizer
+@inject CommonLocalizationService LocalizationService
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListResourceArea",new {area="MenuResource"})">@LocalizationService.Get("ListResourceAreasRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("AddResourceAreaRes")</li>
+        </ol>
+    </nav>
+}
+
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["FormHeader"]</h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="AddResourceArea" method="post">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.ParentId"> @Localizer["ResourceHeaderlbl"] :</label>
+                    <select class="form-control form-control-lg" asp-for="Command.ParentId" asp-items="Model.ResourceHeaderList">
+                        <option value="">@LocalizationService.Get("SelectListDefaultValue")</option>
+                    </select>
+                    <span class="text-danger" asp-validation-for="Command.ParentId"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.AreaName"> @Localizer["ResourceNamelbl"] :</label>
+                    <input class="form-control form-control-lg" asp-for="Command.AreaName" placeholder="@Localizer["ResourceNamelbl"]" />
+                    <span class="text-danger" asp-validation-for="Command.AreaName"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.LocalizationKey"> @Localizer["LocalizationKeylbl"] :</label>
+                    <input asp-for="Command.LocalizationKey" placeholder="@Localizer["LocalizationKeylbl"]" class="form-control form-control-lg" />
+                    <span class="text-danger" asp-validation-for="Command.LocalizationKey"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.Order"> @Localizer["Orderlbl"] :</label>
+                    <input asp-for="Command.Order" class="form-control form-control-lg" placeholder="@Localizer["Orderlbl"]" min="1" />
+                    <span class="text-danger" asp-validation-for="Command.Order"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.IconUrl"> @Localizer["IconUrllbl"] :</label>
+                    <input asp-for="Command.IconUrl" placeholder="@Localizer["IconUrllbl"]" class="form-control form-control-lg" />
+                    <span class="text-danger" asp-validation-for="Command.IconUrl"></span>
+                </div>
+                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

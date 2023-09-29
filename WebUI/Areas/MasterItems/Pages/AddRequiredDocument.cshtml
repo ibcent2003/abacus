@@ -1,0 +1,129 @@
+﻿@page
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.Application.Common.Interfaces
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.MasterItems.Pages.AddRequiredDocumentModel
+@inject IStringLocalizer<Pages.AddRequiredDocumentModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject ICurrentUserService UserService
+
+@section Css
+{
+
+    <link href="~/lib/Select2/css/select2.css" rel="stylesheet" />
+}
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+@section PageName
+{
+    @Localizer["PageName"]
+}
+
+@section BreadCrumbs
+{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Page("ListRequiredDocument",new {area="MasterItems"})">@LocalizationService.Get("ListRequiredDocumentRes")</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("AddRequiredDocumentRes")</li>
+        </ol>
+    </nav>
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["FormHeader"]</h5>
+    </div>
+    <div class="card-body">
+        <form asp-page="AddRequiredDocument" method="post">
+
+            <input type="hidden" asp-for="Command.DocumentFormatString" id="SelectedTags" />
+            <input type="hidden" asp-for="Command.SubscriberId" />
+ 
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.DocumentName"> @Localizer["DocumentNamelbl"] :</label>
+                    <input required class="form-control form-control-lg" asp-for="Command.DocumentName" />
+                    <span class="text-danger" asp-validation-for="Command.DocumentName"></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.DocumentDescription"> @Localizer["DocumentDescriptionlbl"] :</label>
+                    <input asp-for="Command.DocumentDescription" class="form-control form-control-lg" />
+                    <span class="text-danger" asp-validation-for="Command.DocumentDescription"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.MaximumSize"> @Localizer["MaximumSizelbl"] :</label>
+                    <input asp-for="Command.MaximumSize" type="number" min="0.1" max="2" class="form-control form-control-lg" />
+                    <small class="form-text text-muted">size in MB</small>
+                    <span class="text-danger" asp-validation-for="Command.MaximumSize"></span>
+                </div>
+                @if (UserService.UserHasRole(Roles.TradeHubAdmin))
+                {
+                    <div class="form-group">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" asp-for="Command.IsInternalUse" class="custom-control-input" />
+                            <label class="custom-control-label" asp-for="Command.IsInternalUse"> @Localizer["IsInternalUselbl"]</label>
+                        </div>
+                        <span class="text-danger" asp-validation-for="Command.IsInternalUse"></span>
+                    </div>
+                }
+                <div class="form-group">
+                    <label class="col-form-label" asp-for="Command.DocumentFormatString"> @Localizer["DocumentFormatStringlbl"] :</label>
+                    <div class="form-group">
+
+                        <div>
+
+                            @{ var i = 1;}
+
+                            @foreach (var format in EnumHelper.GetValues<FileFormats>())
+                            {
+
+                                var formatname = format.GetAttributeStringValue();
+
+                                <label class="form-check form-check-inline">
+
+                                    <input style="font-size: 9px;" class="chkTags" name=@formatname onclick="GetTicks()" type="checkbox" id=@formatname value=@formatname />
+
+                                    <span class="form-check-label">
+
+                                        &nbsp; @formatname
+
+                                    </span>
+                                </label>}
+                        </div>
+                        <span class="text-danger" asp-validation-for="Command.DocumentFormatString"></span>
+                    </div>
+                </div>
+                <partial name="_FormSubmissionButtonPartial" model="FormSubmissionAction.Create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+
+
+    <script>
+
+        function GetTicks() {
+
+            var checkedIds = $(".chkTags:checkbox:checked").map(function () {
+
+                return this.name;
+
+            }).get();
+
+            $('#SelectedTags').val(checkedIds);
+        }
+
+    </script>
+
+
+}

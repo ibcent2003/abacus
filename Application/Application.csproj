@@ -1,0 +1,109 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Application</RootNamespace>
+    <AssemblyName>Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Subscription\Command\AddUserSubscription\**" />
+    <Compile Remove="Subscription\Query\GetUserPlan\**" />
+    <EmbeddedResource Remove="Subscription\Command\AddUserSubscription\**" />
+    <EmbeddedResource Remove="Subscription\Query\GetUserPlan\**" />
+    <None Remove="Subscription\Command\AddUserSubscription\**" />
+    <None Remove="Subscription\Query\GetUserPlan\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\Interfaces\IIdentityService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\css\semantic.min.css" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\css\workflowdesigner.css" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.activity.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.actors.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.add.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.autoarrangment.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.clone.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.codeactions.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.commands.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.context.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.context.white.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.copy.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.defaultzoom.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.delete.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.fullscreen.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.grid.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.help.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.information.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.inline.off.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.inline.on.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.inline.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.legend.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.localization.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.move.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.parameters.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.redo.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.refresh.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.remove.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.settings.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.timers.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.condition.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.direct.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.not-specified.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.otherwise.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.reverse.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.timer.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transitons2.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transtion.actor.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.undo.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.zoomin.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.zoomout.png" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\ace.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\ext-searchbox.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\jquery.auto-complete.min.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\json5.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\konva.min.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\mode-csharp.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\mode-json.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\semantic.min.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\theme-monokai.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\worker-json.js" />
+    <Content Remove="C:\Users\WB-Staff\.nuget\packages\workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\workflowdesigner.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="FluentValidation" Version="8.6.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="8.6.0" />
+    <PackageReference Include="IdentityModel" Version="4.3.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="WorkflowEngine.NETCore-Core" Version="4.2.3" />
+    <PackageReference Include="WorkflowEngine.NETCore-ProviderForMSSQL" Version="4.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Mappings\" />
+    <Folder Include="Resources\MenuResource\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\CommonResources.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,186 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.Extensions.Localization
+@using Wbc.Application.Common.Enums
+@using Wbc.Application.Common.Helper
+@using Wbc.WebUI.Services
+@model Wbc.WebUI.Areas.GeneralGoods.Pages.GeneralGoodsHistoryModel
+@inject IStringLocalizer<GeneralGoodsHistoryModel> Localizer
+@inject CommonLocalizationService LocalizationService
+@inject IAuthorizationService AuthorizationService
+
+@{
+    <link href="~/lib/DataTables/datatables.css" rel="stylesheet" />
+    Layout = "_PlainLayout";
+}
+
+
+@*@section PageName
+{
+    @Localizer["PageName"]
+}
+
+
+@section ActivePage
+{
+
+    @Localizer["ActivePage"]
+}
+@section PageDescription
+{
+    @Localizer["PageDescription"]
+
+}*@
+
+@{
+        ViewData["Title"] = Localizer["PageTitle"];
+
+    }
+
+    @section PageName
+    {
+        @Localizer["PageName"]
+    }
+
+
+    @section ActivePage
+    {
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Dashboard">@LocalizationService.Get("DashBoardRes")</a></li>
+                <li class="breadcrumb-item active" aria-current="page">@LocalizationService.Get("GeneralGoodsHistoryRes")</li>
+            </ol>
+        </nav>
+    }
+
+@Html.AntiForgeryToken()
+
+<div class="section small_pt pb_20">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-sm-12 col-md-12">
+
+                <div class="heading_s1">
+                    <h5>@LocalizationService.Get("GeneralGoodsHistoryRes")</h5>
+                </div>
+
+                <div class="">
+                    <table id="generalGoods" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    S/N
+                                </th>
+                                <th>
+                                    @Localizer["HSCodeColumn"]
+                                </th>
+                                <th>
+                                    @Localizer["FOBColumn"]
+                                </th>
+
+
+                                <th>@Localizer["FreightColumn"]</th>
+                                <th>@Localizer["InsuranceColumn"]</th>
+                                <th>@Localizer["CountryColumn"]</th>
+                                <th>@Localizer["CurrencyColumn"]</th>
+                                <th>@Localizer["TransactionDateColumn"]</th>
+
+                                <th></th>
+
+
+                            </tr>
+                        </thead>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+@section Scripts
+{
+    <script src="~/lib/DataTables/datatables.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            @*var canUpdate = @canUpdate.Succeeded.ToString().ToLower();
+            var canDelete = @canDelete.Succeeded.ToString().ToLower();*@
+
+            @*var deleteBtnlbl = '@LocalizationService.Get("DataTableDeleteBtnlbl")';
+            var updateBtnlbl = '@LocalizationService.Get("DataTableUpdateBtnlbl")';
+            var isActivelbl = '@LocalizationService.Get("IsActivelbl")';*@
+
+            var columns = [
+                { "data": "id", "orderable": false },
+                { "data": "hsCode", "orderable": true },
+                { "data": "fob", "orderable": false },
+                { "data": "freight", "orderable": false },
+                { "data": "insurance", "orderable": false },
+                { "data": "countryName", "orderable": false },
+                { "data": "currencyName", "orderable": false },
+
+                {
+                    "data": "transactionDate", "orderable": false,
+                    "render": function (data, type, row) {
+                        let date = new Date(data);
+                        return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
+                    }
+                },
+
+            ];
+
+
+            columns.push({
+                "data": "transactionId",
+                "orderable": false,
+                "sClass": "text-center",
+                "render": function (data, type, row) {
+                    return '<a  href="/GeneralGoods/GeneralGoodDutyResult/' + data + '"><i class="text-success fas fa-eye"></i> </a>';
+                }
+            });
+
+
+
+
+            $('#generalGoods').DataTable({
+                "processing": true,
+                "serverSide": true,
+                responsive: true,
+                "info": true,
+                "stateSave": true,
+                "lengthMenu":
+                [
+                    [10, 20, 50, -1], [10, 20, 50, "All"]
+                ],
+                "ajax": {
+                    "url":
+                        '/GeneralGoods/GeneralGoodsHistory',
+                    "type": "POST",
+                    headers: {
+                        RequestVerificationToken:
+                            $('input:hidden[name="__RequestVerificationToken"]').val()
+                    }
+                },
+                "fnRowCallback": function(nRow, aData, iDisplayIndex)
+                {
+                    $("td:first", nRow).html(iDisplayIndex + 1 + this.api().page.info().start);
+
+                    return nRow;
+                },
+                "columns": columns,
+                "order": [[1, "asc"]]
+            });
+        });
+
+    </script>
+}

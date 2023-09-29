@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ibrahim\.nuget\packages\;C:\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.7.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))" />
+  </ItemGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\css\semantic.min.css" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\css\semantic.min.css')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\css\semantic.min.css</TargetPath>
+      <DestinationSubDirectory>wwwroot\css\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\css\semantic.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\css\workflowdesigner.css" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\css\workflowdesigner.css')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\css\workflowdesigner.css</TargetPath>
+      <DestinationSubDirectory>wwwroot\css\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\css\workflowdesigner.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.activity.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.activity.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.activity.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.activity.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.actors.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.actors.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.actors.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.actors.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.add.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.add.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.add.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.add.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.autoarrangment.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.autoarrangment.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.autoarrangment.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.autoarrangment.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.clone.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.clone.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.clone.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.clone.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.codeactions.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.codeactions.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.codeactions.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.codeactions.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.commands.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.commands.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.commands.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.commands.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.context.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.context.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.context.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.context.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.context.white.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.context.white.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.context.white.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.context.white.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.copy.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.copy.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.copy.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.copy.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.defaultzoom.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.defaultzoom.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.defaultzoom.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.defaultzoom.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.delete.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.delete.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.delete.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.delete.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.fullscreen.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.fullscreen.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.fullscreen.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.fullscreen.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.grid.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.grid.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.grid.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.grid.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.help.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.help.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.help.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.help.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.information.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.information.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.information.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.information.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.inline.off.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.inline.off.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.inline.off.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.inline.off.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.inline.on.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.inline.on.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.inline.on.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.inline.on.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.inline.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.inline.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.inline.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.inline.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.legend.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.legend.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.legend.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.legend.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.localization.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.localization.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.localization.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.localization.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.move.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.move.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.move.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.move.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.parameters.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.parameters.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.parameters.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.parameters.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.redo.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.redo.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.redo.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.redo.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.refresh.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.refresh.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.refresh.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.refresh.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.remove.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.remove.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.remove.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.remove.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.settings.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.settings.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.settings.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.settings.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.timers.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.timers.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.timers.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.timers.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.condition.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.condition.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.transition.condition.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.transition.condition.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.direct.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.direct.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.transition.direct.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.transition.direct.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.not-specified.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.not-specified.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.transition.not-specified.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.transition.not-specified.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.otherwise.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.otherwise.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.transition.otherwise.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.transition.otherwise.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.transition.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.transition.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.reverse.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.reverse.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.transition.reverse.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.transition.reverse.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.timer.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transition.timer.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.transition.timer.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.transition.timer.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transitons2.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transitons2.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.transitons2.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.transitons2.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transtion.actor.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.transtion.actor.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.transtion.actor.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.transtion.actor.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.undo.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.undo.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.undo.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.undo.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.zoomin.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.zoomin.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.zoomin.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.zoomin.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.zoomout.png" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\images\wfe.zoomout.png')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\images\wfe.zoomout.png</TargetPath>
+      <DestinationSubDirectory>wwwroot\images\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\images\wfe.zoomout.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\ace.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\ace.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\ace.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\ace.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\ext-searchbox.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\ext-searchbox.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\ext-searchbox.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\ext-searchbox.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\jquery.auto-complete.min.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\jquery.auto-complete.min.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\jquery.auto-complete.min.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\jquery.auto-complete.min.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\json5.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\json5.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\json5.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\json5.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\konva.min.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\konva.min.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\konva.min.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\konva.min.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\mode-csharp.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\mode-csharp.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\mode-csharp.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\mode-csharp.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\mode-json.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\mode-json.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\mode-json.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\mode-json.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\semantic.min.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\semantic.min.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\semantic.min.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\semantic.min.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\theme-monokai.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\theme-monokai.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\theme-monokai.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\theme-monokai.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\worker-json.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\worker-json.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\worker-json.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\worker-json.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\workflowdesigner.min.js" Condition="Exists('$(NuGetPackageRoot)workflowengine.netcore-designer\4.2.6\contentFiles\any\any\wwwroot\js\workflowdesigner.min.js')">
+      <NuGetPackageId>WorkflowEngine.NETCore-Designer</NuGetPackageId>
+      <NuGetPackageVersion>4.2.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>wwwroot\js\workflowdesigner.min.js</TargetPath>
+      <DestinationSubDirectory>wwwroot\js\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>wwwroot\js\workflowdesigner.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\2.9.6\build\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\2.9.6\build\Microsoft.CodeAnalysis.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)nswag.msbuild\13.6.2\build\NSwag.MSBuild.props" Condition="Exists('$(NuGetPackageRoot)nswag.msbuild\13.6.2\build\NSwag.MSBuild.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\3.0.0\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\3.0.0\build\Microsoft.Extensions.ApiDescription.Server.props')" />
+    <Import Project="$(NuGetPackageRoot)nswag.aspnetcore\13.6.2\build\NSwag.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)nswag.aspnetcore\13.6.2\build\NSwag.AspNetCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\3.1.5\build\netcoreapp2.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\3.1.5\build\netcoreapp2.0\Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\3.1.5\buildTransitive\Microsoft.AspNetCore.Identity.UI.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\3.1.5\buildTransitive\Microsoft.AspNetCore.Identity.UI.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\ibrahim\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.6</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgNSwag_MSBuild Condition=" '$(PkgNSwag_MSBuild)' == '' ">C:\Users\ibrahim\.nuget\packages\nswag.msbuild\13.6.2</PkgNSwag_MSBuild>
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\ibrahim\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\ibrahim\.nuget\packages\microsoft.entityframeworkcore.tools\3.1.5</PkgMicrosoft_EntityFrameworkCore_Tools>
+  </PropertyGroup>
+</Project>
